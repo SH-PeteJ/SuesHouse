@@ -1,0 +1,53 @@
+:root {
+  --group-feedback-bg: var(--color-cream);
+  --group-card-bg-start: #dff4e3;
+  --group-card-bg-end: #e7d9f7;
+  --group-event-bg-start: #f8fff9;
+  --group-event-bg-end: #f5effb;
+  --group-icon-bg: #ffe6e6;
+}
+
+.group-feedback-box {
+  background: var(--group-feedback-bg);
+  border-left: 5px solid var(--color-warning);
+}
+
+.group-featured-event {
+  background: linear-gradient(135deg, var(--group-event-bg-start), var(--group-event-bg-end));
+}
+
+.group-featured-image {
+  max-width: 220px;
+  border-radius: 1rem;
+}
+
+.group-meeting-card {
+  background: linear-gradient(315deg, var(--group-card-bg-start), var(--group-card-bg-end));
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.group-meeting-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12) !important;
+}
+
+.group-meeting-icon {
+  font-size: 3rem;
+}
+
+.group-icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--group-icon-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.group-contact-box {
+  background: #ffffff;
+}
