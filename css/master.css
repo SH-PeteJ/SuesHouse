@@ -153,7 +153,13 @@ p {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto 11px;
+  background-color: #c6eebc;   /* move background here */
+  border-radius: 10px;         /* move radius here */
+  overflow: hidden;            /* clip everything */
+  box-shadow: 10px 10px #ace797;
 }
+
+
 
 .team-card {
   background-color: #c6eebc;
@@ -203,7 +209,41 @@ p {
 }
 
 /* ---------- Responsive ---------- */
+/* ----INTRO PAGE ---- */
 
+.intro-card {
+  background: none;            /* remove background */
+  border-radius: 0;            /* remove radius */
+  overflow: visible;           /* not needed anymore */
+}
+.intro-imageright img,
+.intro-image-right img {
+  float: right;
+  width: 180px;
+  max-width: 40%;
+  height: auto;
+  margin: 0 0 10px 10px;
+  border-radius: 10px;
+}
+
+.intro-imagerleft img,
+.intro-image-left img {
+  float: right;
+  width: 180px;
+  max-width: 40%;
+  height: auto;
+  margin: 0 0 20px 20px;
+  border-radius: 10px;
+}
+.intro-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.intro-p {
+ color: #557a68
+}
 /* Team images */
 .team-imageleft img,
 .team-image-left img {
