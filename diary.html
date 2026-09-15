@@ -20,6 +20,7 @@
   <main class="container page-content py-5">
     <h1>Diary</h1>
     <h2> GitHub version - 15th Sept</h2>
+    <p> Replaced footer on all apges</p>
     <p>Played with adding KAVS logo to navbar but it's too small to read text
     <p> Tidied up home.html</p>
     <p> uploaded extra images to unusedimages folder in GitHub</p>
@@ -122,28 +123,15 @@
       Main text Charcoal ......... #303936</p>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-3 text-center">
-          <img src="images/kavs1.png" alt="Sue's House" class="footer-logo">
-        </div>
-        <div class="col-md-3">
-          <p class="footer-text">Ilford Cancer and Holistic<br> Help Centre</p>
-        </div>
-        <div class="col-md-3">
-          <p class="footer-text">Registered Charity No.299782</p>
-        </div>
-        <div class="col-md-3">
-          <p class="footer-text">10 Dawlish Drive<br> Ilford<br> Essex<br> IG3 9ED</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+<div id="footer-placeholder"></div>
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
 
-  <div class="copyright text-center">
-    © Sue's House ~ 2026<br>All rights reserved.
-  </div>
 </body>
 
 </html>
