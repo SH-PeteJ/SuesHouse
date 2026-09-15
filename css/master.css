@@ -27,6 +27,9 @@ body {
   line-height: 1.6;
   background: var(--color-mint);
 }
+main {
+  padding-top: 120px; /* match your navbar height added as part of footer upgrade */
+}
 
 .page-container {
   width: 100%;
