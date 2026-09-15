@@ -149,19 +149,19 @@ p {
   border-radius: 8px;
   transition: background 0.25s ease, color 0.25s ease;
 }
-/* 15/09/2026 – Right-side navbar logo styling */
+/* 15/09/2026 – Right-side navbar logo styling 
 .nav-logo-right {
   height: 180px;
   width: auto;
   display: block;
 }
-
-/* 15/09/2026 – Align right brand neatly */
+*/
+/* 15/09/2026 – Align right brand neatly 
 .right-brand {
   display: flex;
   align-items: center;
 }
-
+*/
 /* 15/09/2026 – Mobile adjustments for dual logos */
 @media (max-width: 767px) {
   .nav-logo-right {
