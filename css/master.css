@@ -690,6 +690,7 @@ figcaption {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   line-height: 1.65;
   text-align: left;
+
 }
 
 .about-hero-image {
@@ -997,6 +998,7 @@ figcaption {
   margin: 1rem 0 0;
   font-size: clamp(1.15rem, 2vw, 1.4rem);
   font-weight: 500;
+
 }
 
 .hero-intro {
@@ -1054,7 +1056,7 @@ figcaption {
 }
 
 /* Contact button */
-.row > .contact-button {
+.row  .contact-button {
   display: block;
   width: 33%;
   margin-left: auto;
@@ -1372,6 +1374,16 @@ figcaption {
   font-size: clamp(1.15rem, 2vw, 1.4rem);
   font-weight: 500;
 }
+/* 15/09/2026 – Make lead h2 more prominent but still gentle */
+.lead {
+  font-size: 1.0rem;
+  font-weight: 500;
+  color: var(--color-sage);
+  letter-spacing: 0.5px;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+
 
 .hero-intro {
   max-width: 620px;
@@ -1379,6 +1391,7 @@ figcaption {
   color: #5d6863;
   font-size: 1.05rem;
   line-height: 1.7;
+  
 }
 
 .contact-content {
