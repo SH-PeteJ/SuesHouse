@@ -151,7 +151,7 @@ p {
 }
 /* 15/09/2026 – Right-side navbar logo styling */
 .nav-logo-right {
-  height: 150px;
+  height: 180px;
   width: auto;
   display: block;
 }
@@ -165,7 +165,7 @@ p {
 /* 15/09/2026 – Mobile adjustments for dual logos */
 @media (max-width: 767px) {
   .nav-logo-right {
-    height: 150px;
+    height: 180px;
   }
 }
 
