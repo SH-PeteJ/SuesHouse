@@ -18,9 +18,10 @@
   --color-danger-dark: #8f062d;
 }
 
+/* 15/09/2026 – Corrected body spacing for fixed navbar */
 body {
-  padding-top: 50px;
   margin: 0;
+  padding-top: 180px; /* ensures content starts below navbar */
   font-family: system-ui, sans-serif;
   text-align: justify;
   line-height: 1.6;
