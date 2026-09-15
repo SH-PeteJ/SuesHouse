@@ -164,7 +164,7 @@ p {
 /* 15/09/2026 – Mobile adjustments for dual logos */
 @media (max-width: 767px) {
   .nav-logo-right {
-    height: 110px;
+    height: 150px;
   }
 }
 
