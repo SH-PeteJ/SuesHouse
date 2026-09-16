@@ -101,30 +101,6 @@ p {
   max-width: 120px;
 }
 
-/* Mobile adjustments */
-
-@media (max-width: 767.98px) {
-  .hero {
-    padding: 2.5rem 1rem !important;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .feedback-box {
-    padding: 1.5rem !important;
-  }
-
-  .featured-event {
-    text-align: center;
-  }
-
-  .footer {
-    text-align: center;
-  }
-}
-
 /* =========================================================
    FINAL LEFT SIDEBAR NAVBAR
    Logo above menu
@@ -233,15 +209,15 @@ p {
 }
 /*Sidebar button background colours below*/
 .sidebar-navbar .nav-about > .nav-link {
-  background-color: #A9C3B5;
+  background-color: #a9c3b5;
 }
 
 .sidebar-navbar .nav-help > .nav-link {
-  background-color:#A9C3B5;
+  background-color: #a9c3b5;
 }
 
 .sidebar-navbar .nav-team > .nav-link {
-  background-color: #A9C3B5;
+  background-color: #a9c3b5;
 }
 
 .sidebar-navbar .nav-link:hover,
@@ -263,7 +239,6 @@ p {
   margin-left: 0;
 
   background-color: var(--color-sage-soft);
-  
 }
 
 /* Buttons */
@@ -316,13 +291,6 @@ p {
   align-items: center;
 }
 */
-/* 15/09/2026 – Mobile adjustments for dual logos */
-@media (max-width: 767px) {
-  .nav-logo-right {
-    height: 180px;
-  }
-}
-
 /* 15/09/2026 – Hover effect */
 .charity-nav .nav-link:hover {
   background-color: var(--color-sage);
@@ -346,22 +314,6 @@ p {
 .dropdown-menu .dropdown-item:hover {
   background-color: var(--color-sage);
   color: blue;
-}
-
-/* 15/09/2026 – Mobile improvements */
-@media (max-width: 767px) {
-  .charity-navbar {
-    padding: 0.6rem 0;
-  }
-
-  .brand-title {
-    font-size: 1.2rem;
-  }
-
-  .charity-nav .nav-link {
-    font-size: 1rem;
-    padding: 12px;
-  }
 }
 
 /* Donations page */
@@ -424,21 +376,6 @@ p {
 
 .therapist-text h1 {
   margin-top: 0;
-}
-
-@media (max-width: 767px) {
-  .therapist-image,
-  .therapist-text {
-    width: 100%;
-  }
-
-  .therapist-image {
-    padding-bottom: 15px;
-  }
-
-  .therapist-text h1 {
-    text-align: left !important;
-  }
 }
 
 /* ---------- Footer compatibility ---------- */
@@ -525,23 +462,6 @@ p {
   flex: 1;
 }
 
-@media (max-width: 767px) {
-  .team-profile {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .team-profile-image {
-    flex: none;
-    width: 180px;
-    max-width: 100%;
-  }
-
-  .team-profile-text {
-    width: 100%;
-  }
-}
-
 .card-h1,
 .card-title {
   color: var(--color-sage);
@@ -575,13 +495,6 @@ p {
   height: auto;
   object-fit: contain;
   border-radius: 25px;
-}
-
-/* Hide header image on small screens */
-@media (max-width: 599px) {
-  .site-header-image {
-    display: none;
-  }
 }
 
 .counsellor-image {
@@ -711,7 +624,6 @@ figcaption {
 
 .dropdown-menu {
   background-color: var(--color-sage);
-
 }
 
 .navbar-toggler {
@@ -724,20 +636,8 @@ figcaption {
 }
 
 /* Desktop hover dropdowns */
-@media (hover: hover) and (pointer: fine) {
-  .navbar .dropdown:hover > .dropdown-menu {
-    display: block;
-    margin-top: 0;
-      }
-
-  .navbar .dropdown:hover > .dropdown-toggle {
-    color: var(--color-sage)
-    background-color: #557a68 !important;
-  }
-}
-
 .dropdown-menu .dropdown-item {
-  color:var(--color-sage);
+  color: var(--color-sage);
 }
 
 .dropdown-menu .dropdown-item:hover,
@@ -985,102 +885,11 @@ figcaption {
   color: var(--color-gold);
 }
 
-@media (max-width: 767px) {
-  /* Visual refresh: stack the hero and next-step panel comfortably on small screens. */
-  .about-home {
-    padding-top: 1.5rem;
-  }
-
-  .about-hero {
-    grid-template-columns: 1fr;
-    margin-bottom: 2.5rem;
-  }
-
-  .about-hero-image {
-    min-height: 240px;
-    order: -1;
-  }
-
-  .about-section {
-    margin-bottom: 2.5rem;
-  }
-
-  .about-story-image {
-    float: none;
-    width: 100%;
-    max-width: 420px;
-    margin: 0 auto 1.5rem;
-  }
-
-  .about-next-steps {
-    display: block;
-    padding: 1.5rem;
-  }
-
-  .about-next-links {
-    margin-top: 1.5rem;
-  }
-}
-
 .footer-logo {
   max-width: 120px;
   height: auto;
 }
 
-/* =========================================================
-   RESPONSIVE BREAKPOINTS
-   ========================================================= */
-
-/* Tablets (≤1024px) */
-@media (max-width: 1024px) {
-  .trustee {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .trustee-image {
-    margin: 0 auto;
-  }
-
-  .trustee-text {
-    text-align: left;
-  }
-
-  .nav-link {
-    font-size: 0.95rem;
-    margin-right: 6px;
-  }
-}
-
-/* Mobiles (≤600px) */
-@media (max-width: 600px) {
-  .container {
-    margin-top: 70px;
-    padding: 0 12px;
-  }
-
-  .trustee-image {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .pad15-imageleft,
-  .pad15-imageright {
-    float: none;
-    display: block;
-    margin: 0 auto 20px auto;
-  }
-
-  .nav-link {
-    font-size: 0.9rem;
-    padding: 6px 10px;
-    margin-right: 4px;
-  }
-
-  .navbar-brand {
-    font-size: 1.3rem;
-  }
-}
 /* 15/09/2026 – Balance left and right navbar logos 
 .navbar-brand {
   flex: 0 0 180px; /* fixed width anchor for both logos
@@ -1099,21 +908,6 @@ figcaption {
   flex: 1 1 auto;
   display: flex;
   justify-content: center;
-}
-
-/* Small phones (≤400px) */
-@media (max-width: 400px) {
-  .nav-link {
-    font-size: 0.85rem;
-    padding: 6px 8px;
-  }
-}
-
-/* Disable hover dropdowns on mobile */
-@media (max-width: 768px) {
-  .navbar .dropdown:hover > .dropdown-menu {
-    display: none !important;
-  }
 }
 
 /* ============ GROUP.CSS ===============*/
@@ -1417,8 +1211,41 @@ figcaption {
 }
 
 /* =========================================================
-   RESPONSIVE RULES USED BY contact.html
+   RESPONSIVE RULES
+   Ordered from larger screens to smaller screens.
    ========================================================= */
+
+@media (hover: hover) and (pointer: fine) {
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+
+  .navbar .dropdown:hover > .dropdown-toggle {
+    color: var(--color-sage) !important;
+    background-color: #557a68 !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .trustee {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .trustee-image {
+    margin: 0 auto;
+  }
+
+  .trustee-text {
+    text-align: left;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+    margin-right: 6px;
+  }
+}
 
 @media (max-width: 991.98px) {
   .contact-hero {
@@ -1435,6 +1262,134 @@ figcaption {
 }
 
 @media (max-width: 767.98px) {
+  body {
+    padding-left: 0;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+  .sidebar-navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 0.75rem 1rem;
+  }
+
+  .sidebar-navbar .navbar-brand {
+    margin-bottom: 0.75rem;
+  }
+
+  .sidebar-navbar .nav-logo {
+    max-width: 90px;
+  }
+
+  .sidebar-navbar .navbar-collapse {
+    display: none !important;
+  }
+
+  .sidebar-navbar .navbar-collapse.show {
+    display: block !important;
+  }
+
+  .sidebar-navbar .navbar-toggler {
+    align-self: center;
+  }
+
+  .hero {
+    padding: 2.5rem 1rem !important;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .feedback-box {
+    padding: 1.5rem !important;
+  }
+
+  .featured-event,
+  .footer {
+    text-align: center;
+  }
+
+  .charity-navbar {
+    padding: 0.6rem 0;
+  }
+
+  .brand-title {
+    font-size: 1.2rem;
+  }
+
+  .charity-nav .nav-link {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .therapist-image,
+  .therapist-text {
+    width: 100%;
+  }
+
+  .therapist-image {
+    padding-bottom: 15px;
+  }
+
+  .therapist-text h1 {
+    text-align: left !important;
+  }
+
+  .team-profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-profile-image {
+    flex: none;
+    width: 180px;
+    max-width: 100%;
+  }
+
+  .team-profile-text {
+    width: 100%;
+  }
+
+  .about-home {
+    padding-top: 1.5rem;
+  }
+
+  .about-hero {
+    grid-template-columns: 1fr;
+    margin-bottom: 2.5rem;
+  }
+
+  .about-hero-image {
+    min-height: 240px;
+    order: -1;
+  }
+
+  .about-section {
+    margin-bottom: 2.5rem;
+  }
+
+  .about-story-image {
+    float: none;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .about-next-steps {
+    display: block;
+    padding: 1.5rem;
+  }
+
+  .about-next-links {
+    margin-top: 1.5rem;
+  }
+
   .contact-hero {
     padding: 3rem 0 2.75rem;
   }
@@ -1462,8 +1417,43 @@ figcaption {
     padding: 1.5rem;
   }
 
-  .footer {
-    text-align: center;
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-top: 70px;
+    padding: 0 12px;
+  }
+
+  .trustee-image {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .pad15-imageleft,
+  .pad15-imageright {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    margin-right: 4px;
+  }
+
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .site-header-image {
+    display: none;
   }
 }
 
@@ -1488,6 +1478,13 @@ figcaption {
   .contact-reassurance-box {
     gap: 0.9rem;
     padding: 1.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-link {
+    font-size: 0.85rem;
+    padding: 6px 8px;
   }
 }
 
@@ -1797,79 +1794,4 @@ figcaption {
 .contact-map-footer a:focus-visible {
   outline: 3px solid rgba(82, 116, 97, 0.35);
   outline-offset: 3px;
-}
-
-/* =========================================================
-   RESPONSIVE RULES USED BY contact.html
-   ========================================================= */
-
-@media (max-width: 991.98px) {
-  .contact-hero {
-    padding: 3.5rem 0 3rem;
-  }
-
-  .contact-content {
-    padding: 3rem 0;
-  }
-
-  .contact-map-frame img {
-    height: 380px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .contact-hero {
-    padding: 3rem 0 2.75rem;
-  }
-
-  .contact-content {
-    padding: 2.5rem 0;
-  }
-
-  .contact-card {
-    padding: 1.5rem;
-    border-radius: 14px;
-  }
-
-  .contact-map-frame img {
-    height: 320px;
-  }
-
-  .contact-map-footer {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .contact-reassurance-box {
-    gap: 0.9rem;
-    padding: 1.5rem;
-  }
-
-  .footer {
-    text-align: center;
-  }
-}
-
-@media (max-width: 479.98px) {
-  .contact-hero h1 {
-    font-size: 2.15rem;
-  }
-
-  .hero-intro {
-    font-size: 0.98rem;
-  }
-
-  .contact-map-frame img {
-    height: 260px;
-  }
-
-  .contact-directions-btn {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .contact-reassurance-box {
-    gap: 0.9rem;
-    padding: 1.25rem;
-  }
 }
