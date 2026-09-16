@@ -135,7 +135,7 @@ p {
   top: 0;
   left: 0;
 
-  width: 200px;
+  width: 270px;
   height: 100vh;
 
   padding: 1rem;
@@ -164,6 +164,8 @@ p {
   margin: 0 0 1.5rem 0;
 
   padding: 0;
+
+  text-align: center;
 }
 
 /* Logo image */
@@ -217,13 +219,37 @@ p {
 
   padding: 10px 12px;
 
-  color: var(--color-sage);
+  color: #ffffff;
 
-  background-color: transparent;
+  background-color: var(--color-sage);
 
   border-radius: 6px;
 
   font-weight: 600;
+
+  transition:
+    filter 0.2s ease,
+    transform 0.2s ease;
+}
+
+.sidebar-navbar .nav-about > .nav-link {
+  background-color: var(--color-terracotta);
+}
+
+.sidebar-navbar .nav-help > .nav-link {
+  background-color: var(--color-sage);
+}
+
+.sidebar-navbar .nav-team > .nav-link {
+  background-color: var(--color-danger);
+}
+
+.sidebar-navbar .nav-link:hover,
+.sidebar-navbar .nav-link:focus,
+.sidebar-navbar .nav-link[aria-expanded="true"] {
+  color: #ffffff;
+  filter: brightness(0.86);
+  transform: translateX(2px);
 }
 
 /* Dropdown menus */
