@@ -231,17 +231,17 @@ p {
     filter 0.2s ease,
     transform 0.2s ease;
 }
-
+/*Sidebar button background colours below*/
 .sidebar-navbar .nav-about > .nav-link {
-  background-color: var(--color-terracotta);
+  background-color: #A9C3B5;
 }
 
 .sidebar-navbar .nav-help > .nav-link {
-  background-color:blueviolet;
+  background-color:#A9C3B5;
 }
 
 .sidebar-navbar .nav-team > .nav-link {
-  background-color: var(--color-danger);
+  background-color: #A9C3B5;
 }
 
 .sidebar-navbar .nav-link:hover,
