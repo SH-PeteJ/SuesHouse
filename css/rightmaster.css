@@ -605,12 +605,21 @@ figcaption {
   width: auto;
   display: block;
 }
-/* comment out to test sidebar navbar
+
 .navbar-brand {
   display: flex;
   align-items: center;
 }
-*/
+
+/* FORCE sidebar brand to stack vertically */
+.sidebar-navbar .navbar-brand {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
 .nav-logo {
   height: 150px;
   width: auto;
