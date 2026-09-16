@@ -263,6 +263,7 @@ p {
   margin-left: 0;
 
   background-color: var(--color-sage-soft);
+  
 }
 
 /* Buttons */
@@ -333,17 +334,18 @@ p {
   background-color: var(--color-sage-soft);
   border-radius: 10px;
   padding: 0.5rem 0;
+  color: red;
 }
 
 .dropdown-menu .dropdown-item {
-  color: var(--color-sage);
+  color: yellow;
   font-weight: 600;
   padding: 10px 18px;
 }
 
 .dropdown-menu .dropdown-item:hover {
   background-color: var(--color-sage);
-  color: #fff;
+  color: blue;
 }
 
 /* 15/09/2026 – Mobile improvements */
