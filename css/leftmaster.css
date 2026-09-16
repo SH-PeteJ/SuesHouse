@@ -711,6 +711,7 @@ figcaption {
 
 .dropdown-menu {
   background-color: var(--color-sage);
+  color: #0d6efd;
 }
 
 .navbar-toggler {
@@ -727,16 +728,17 @@ figcaption {
   .navbar .dropdown:hover > .dropdown-menu {
     display: block;
     margin-top: 0;
+    color: #08e03e;
   }
 
   .navbar .dropdown:hover > .dropdown-toggle {
-    color: #a9c3b5 !important;
+    color: #e0558f !important;
     background-color: #557a68 !important;
   }
 }
 
 .dropdown-menu .dropdown-item {
-  color: var(--color-sage-soft);
+  color:red
 }
 
 .dropdown-menu .dropdown-item:hover,
