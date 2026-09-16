@@ -192,6 +192,13 @@ p {
   flex-direction: column;
   align-items: stretch;
 }
+/* 16/09/2026 – Sidebar brand must stack vertically */
+.sidebar-navbar .navbar-brand {
+  display: block !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
 
 
 /* ========= Navbar additions 15th Sept ===========*/
