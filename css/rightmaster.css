@@ -164,10 +164,23 @@ p {
   margin-left: 10px;
 }
 /* 16/09/2026 – Sidebar logo */
-.sidebar-navbar .nav-logo {
-  height: 120px;
-  width: auto;
+/* 16/09/2026 – Prevent logo from pushing menu sideways */
+/* 16/09/2026 – Prevent logo from pushing menu sideways */
+.sidebar-navbar .navbar-brand {
+  width: 100%;
+  display: block;
+  text-align: center; /* optional, looks nicer */
 }
+
+.sidebar-navbar .nav-logo {
+  max-width: 120px;   /* keeps logo small */
+  width: 100%;        /* prevents overflow */
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem; /* centres logo */
+}
+
+
 /* 16/09/2026 – Stack sidebar buttons vertically */
 .sidebar-navbar .btn {
   display: block;
