@@ -1,4 +1,4 @@
- fetch("navbar.html")
+ fetch("rightnavbar.html")
    .then((response) => response.text())
    .then((data) => {
      document.getElementById("nav-placeholder").innerHTML = data;
