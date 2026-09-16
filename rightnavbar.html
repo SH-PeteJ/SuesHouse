@@ -1,25 +1,28 @@
-<!-- 16/09/2026 – Right‑hand vertical charity navbar -->
+<!-- 16/09/2026 – Left-hand vertical sidebar navbar -->
 <nav class="navbar sidebar-navbar navbar-expand-md shadow-sm">
 
-
-  <!-- Brand at top of sidebar -->
-  <a class="navbar-brand d-flex align-items-center mb-3" href="home.html">
+  <!-- Logo + Title -->
+  <a class="navbar-brand" href="home.html">
     <img src="images/shlogo.jpg" alt="Sue's House Logo" class="nav-logo">
-    <span class="brand-title ms-2">Sue’s House</span>
+    <span class="brand-title mt-2">Sue’s House</span>
   </a>
 
   <!-- Mobile toggler -->
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarNav"
+    aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <!-- Vertical navigation -->
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <!-- Vertical menu -->
+  <div class="collapse navbar-collapse" id="sidebarNav">
+
     <ul class="navbar-nav charity-nav flex-column">
 
       <!-- About Us -->
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          About Us
+        </a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="home.html">Our Story</a></li>
           <li><a class="dropdown-item" href="contact.html">Contact & Directions</a></li>
@@ -31,7 +34,9 @@
 
       <!-- Help -->
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Help</a>
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          Help
+        </a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="support.html">Counselling & Support</a></li>
           <li><a class="dropdown-item" href="therapies.html">Complementary Therapies</a></li>
@@ -44,7 +49,9 @@
 
       <!-- Our Team -->
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Team</a>
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          Our Team
+        </a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="sponsors.html">Our Supporters</a></li>
           <li><a class="dropdown-item" href="trustees.html">Our Trustees</a></li>
@@ -58,5 +65,6 @@
     <!-- Buttons -->
     <a href="shnotes.html" class="btn btn-warning mt-3">To do 4 Sue's House</a>
     <a href="pjnotes.html" class="btn btn-warning mt-2">To do 4 Pete</a>
+
   </div>
 </nav>
