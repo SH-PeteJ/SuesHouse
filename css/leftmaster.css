@@ -728,11 +728,10 @@ figcaption {
   .navbar .dropdown:hover > .dropdown-menu {
     display: block;
     margin-top: 0;
-    color: #08e03e;
-  }
+      }
 
   .navbar .dropdown:hover > .dropdown-toggle {
-    color: #e0558f !important;
+    color: var(--color-sage)
     background-color: #557a68 !important;
   }
 }
