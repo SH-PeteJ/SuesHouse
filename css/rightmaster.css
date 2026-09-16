@@ -131,7 +131,7 @@ p {
   position: fixed;
   top: 0;
   left: 0; /*puts menu on left*/
-  width: 200px;
+  width: 200px; /*width of sidebar*/
   height: 70vh;
   padding: 1rem;
   overflow-y: auto;
