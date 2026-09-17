@@ -492,7 +492,7 @@ p {
 .site-header-image img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100px; /*was set to auto but trying a smaller header*/
   object-fit: contain;
   border-radius: 25px;
 }
