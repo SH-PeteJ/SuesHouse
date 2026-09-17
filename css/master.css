@@ -240,12 +240,14 @@ p {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto 11px;
-  background-color: #c6eebc; /* move background here */
+  background-color: #FAF7F0; /* move background here */
   border-radius: 10px; /* move radius here */
   overflow: hidden; /* clip everything */
   box-shadow: 10px 10px #557a68;
 }
-
+.review-card {
+  background-color: #FAF7F0;
+}
 .team-card {
   background-color: #FAF7F0;
 }
