@@ -355,7 +355,11 @@ p {
 .team-card {
   background-color: #c6eebc;
 }
-
+.volfade-card {
+  background: var(--color-ivory);
+  border-radius: 15px;
+  height: 400px;
+}
 .therapist-row {
   margin-bottom: 30px;
 }
@@ -512,6 +516,11 @@ p {
   display: block;
 }
 
+.volfade-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 .charity-link:hover {
   color: #557a68;
   text-decoration: none;
