@@ -715,13 +715,53 @@ figcaption {
   padding-top: 2.5rem;
   padding-bottom: 3rem;
 }
-  .carousel-item {
-    transition: transform 3s ease-in-out;
-  }
-  .carousel-fade .active.carousel-item-start,
-  .carousel-fade .active.carousel-item-end {
-    transition: opacity 0s 5s;
-  }
+
+.carousel {
+  padding-bottom: 6rem;
+  overflow: visible;
+}
+
+.carousel-inner {
+  overflow: visible;
+}
+
+.carousel-caption {
+  top: 100%;
+  bottom: auto;
+  color: black;
+}
+
+/* Move indicators below the caption */
+.carousel-indicators {
+  position: absolute;
+  top: calc(100% + 3.5rem);
+  bottom: auto;
+  margin: 0;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  background-color: gray;
+}
+
+.carousel-indicators .active {
+  background-color: blue;
+}
+
+.carousel-item {
+  transition: transform 3s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 5s;
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
 /* Visual refresh: establish a clear first stop for visitors. */
 .about-hero {
   display: grid;
