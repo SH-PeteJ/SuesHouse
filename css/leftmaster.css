@@ -758,8 +758,10 @@ figcaption {
 }
 
 .carousel-item img {
+  width: 100%;
   height: 500px;
-  object-fit: cover;
+  object-fit: contain;
+  display: block;
 }
 
 /* Visual refresh: establish a clear first stop for visitors. */
