@@ -33,7 +33,51 @@ ALT TEXT to be improved, image styles to be tweaked-->
   title="Sue&#39;s House - Ilford - test video" frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </main>
+  
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Visitor Counter</title>
+  <style>
+    .counter-box {
+      text-align: center;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .counter-number {
+      font-size: 48px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="counter-box">
+    <p>Page views:</p>
+    <span class="counter-number" id="count">0</span>
+  </div>
+
+  <script>
+    let count = localStorage.getItem('page_view');
+    if (count) {
+      count = Number(count) + 1;
+    } else {
+      count = 1;
+    }
+    localStorage.setItem('page_view', count);
+    document.getElementById('count').innerText = count;
+  </script>
+</body>
+
+</html>
+
+
+</main>
 
 <div id="footer-placeholder"></div>
 <script>
