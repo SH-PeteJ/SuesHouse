@@ -358,8 +358,14 @@ p {
 .volfade-card {
   background: var(--color-ivory);
   border-radius: 15px;
-  height: 400px;
+
 }
+.volfade-card::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .therapist-row {
   margin-bottom: 30px;
 }
