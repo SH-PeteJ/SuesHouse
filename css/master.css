@@ -21,21 +21,22 @@
 /* 15/09/2026 – Corrected body spacing for fixed navbar */
 body {
   margin: 0;
-  padding-top: 180px; /* ensures content starts below navbar */
+  padding-top: 96px;
   font-family: system-ui, sans-serif;
   text-align: justify;
   line-height: 1.6;
   background: var(--color-mint);
+  overflow-x: hidden;
 }
 main {
-  padding-top: 120px; /* match your navbar height added as part of footer upgrade */
+  padding-top: 0;
 }
 
 .page-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 clamp(1rem, 3vw, 2rem);
 }
 
 .story-text {
@@ -99,7 +100,6 @@ p {
   max-width: 120px;
 }
 
-
 /* Mobile adjustments */
 
 @media (max-width: 767.98px) {
@@ -147,7 +147,9 @@ p {
   font-weight: 600;
   padding: 10px 16px;
   border-radius: 8px;
-  transition: background 0.25s ease, color 0.25s ease;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
 }
 /* 15/09/2026 – Right-side navbar logo styling 
 .nav-logo-right {
@@ -168,7 +170,6 @@ p {
     height: 180px;
   }
 }
-
 
 /* 15/09/2026 – Hover effect */
 .charity-nav .nav-link:hover {
@@ -240,16 +241,16 @@ p {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto 11px;
-  background-color: #FAF7F0; /* move background here */
+  background-color: #faf7f0; /* move background here */
   border-radius: 10px; /* move radius here */
   overflow: hidden; /* clip everything */
   box-shadow: 10px 10px #557a68;
 }
 .review-card {
-  background-color: #FAF7F0;
+  background-color: #faf7f0;
 }
 .team-card {
-  background-color: #FAF7F0;
+  background-color: #faf7f0;
 }
 
 .therapist-row {
@@ -411,7 +412,8 @@ p {
    ========================================================= */
 
 .site-header-image {
-  max-width: 1200px;
+  width: min(100% - 2rem, 1280px);
+  max-width: 1280px;
   margin: 0 auto;
   overflow: hidden;
   height: auto;
@@ -505,7 +507,7 @@ figcaption {
   font-size: 1rem;
   font-weight: 400;
   background-color: var(--color-sage-soft);
-  margin-right: 10px;
+  margin-right: 0.35rem;
   border-radius: 10px;
   padding: 8px 14px;
 }
@@ -524,7 +526,7 @@ figcaption {
 
 .navbar-brand img {
   height: auto;
-  max-height: 120px;
+  max-height: 72px;
   width: auto;
   display: block;
 }
@@ -535,7 +537,7 @@ figcaption {
 }
 
 .nav-logo {
-  height: 150px;
+  height: 72px;
   width: auto;
   display: block;
 }
@@ -554,6 +556,18 @@ figcaption {
 
 .navbar-toggler {
   border-color: var(--color-sage-soft);
+}
+
+.charity-navbar .container {
+  flex-wrap: wrap;
+}
+
+.charity-navbar .navbar-collapse {
+  flex-basis: 100%;
+}
+
+.charity-navbar .navbar-nav {
+  align-items: center;
 }
 
 /*Hamburger*/
@@ -616,6 +630,7 @@ figcaption {
 
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   margin: 0;
   padding: 0;
@@ -627,6 +642,28 @@ figcaption {
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.3s ease;
+}
+
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
+}
+
+table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.row > * {
+  min-width: 0;
+}
+
+.contact-page > .row {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .footer-links a:hover {
@@ -692,7 +729,6 @@ figcaption {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   line-height: 1.65;
   text-align: left;
-
 }
 
 .about-hero-image {
@@ -891,11 +927,27 @@ figcaption {
   }
 }
 
+@media (min-width: 992px) {
+  .charity-navbar .navbar-collapse {
+    flex-basis: auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .charity-navbar .navbar-collapse {
+    display: none !important;
+  }
+
+  .charity-navbar .navbar-collapse.show {
+    display: flex !important;
+  }
+}
+
 /* Mobiles (≤600px) */
 @media (max-width: 600px) {
   .container {
-    margin-top: 70px;
-    padding: 0 12px;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   .trustee-image {
@@ -918,6 +970,45 @@ figcaption {
 
   .navbar-brand {
     font-size: 1.3rem;
+  }
+
+  body {
+    padding-top: 76px;
+  }
+
+  .navbar-brand img,
+  .nav-logo {
+    max-height: 56px;
+    height: 56px;
+  }
+
+  .charity-navbar .navbar-nav {
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .charity-navbar .nav-item,
+  .charity-navbar .nav-link,
+  .charity-navbar .btn {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .charity-navbar .navbar-collapse {
+    display: none !important;
+    padding: 0.5rem 0;
+  }
+
+  .charity-navbar .navbar-collapse.show {
+    display: flex !important;
+  }
+
+  .card {
+    box-shadow: 5px 5px var(--color-sage);
+  }
+
+  .footer-links {
+    justify-content: center;
   }
 }
 /* 15/09/2026 – Balance left and right navbar logos 
@@ -1000,7 +1091,6 @@ figcaption {
   margin: 1rem 0 0;
   font-size: clamp(1.15rem, 2vw, 1.4rem);
   font-weight: 500;
-
 }
 
 .hero-intro {
@@ -1058,7 +1148,7 @@ figcaption {
 }
 
 /* Contact button */
-.row  .contact-button {
+.row .contact-button {
   display: block;
   width: 33%;
   margin-left: auto;
@@ -1378,7 +1468,7 @@ figcaption {
 }
 /* 15/09/2026 – Make lead h2 more prominent but still gentle */
 .lead {
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--color-sage);
   letter-spacing: 0.5px;
@@ -1386,14 +1476,12 @@ figcaption {
   margin-bottom: 0.2rem;
 }
 
-
 .hero-intro {
   max-width: 620px;
   margin: 0.75rem auto 0;
   color: #5d6863;
   font-size: 1.05rem;
   line-height: 1.7;
-  
 }
 
 .contact-content {
