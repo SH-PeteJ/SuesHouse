@@ -1058,12 +1058,7 @@ table {
   }
 }
 
-/* Disable hover dropdowns on mobile */
-@media (max-width: 768px) {
-  .navbar .dropdown:hover > .dropdown-menu {
-    display: none !important;
-  }
-}
+
 
 /* ============ GROUP.CSS ===============*/
 
