@@ -140,7 +140,7 @@ p {
 }
 
 /* 15/09/2026 – Improve nav link readability */
-.charity-nav .nav-link {
+ .charity-nav .nav-link {
   background-color: transparent;
   color: var(--color-sage);
   font-size: 1.05rem;
@@ -151,6 +151,25 @@ p {
     background 0.25s ease,
     color 0.25s ease;
 }
+
+/* Mouse/trackpad */
+@media (hover: hover) and (pointer: fine) {
+  .charity-nav .nav-link:hover {
+    background-color: var(--color-sage);
+    color: white;
+  }
+}
+
+/* Keyboard navigation */
+.charity-nav .nav-link:focus-visible {
+  background-color: var(--color-sage);
+  color: white;
+  outline: 3px solid var(--color-sage);
+  outline-offset: 2px;
+}
+
+*/
+
 /* 15/09/2026 – Right-side navbar logo styling 
 .nav-logo-right {
   height: 180px;
@@ -1802,4 +1821,26 @@ table {
     gap: 0.9rem;
     padding: 1.25rem;
   }
+}
+.charity-nav .nav-link {
+  background-color: transparent;
+  color: var(--color-sage);
+  transition: background-color 0.25s ease,
+              color 0.25s ease;
+}
+
+/* Mouse/trackpad */
+@media (hover: hover) and (pointer: fine) {
+  .charity-nav .nav-link:hover {
+    background-color: var(--color-sage);
+    color: white;
+  }
+}
+
+/* Keyboard navigation */
+.charity-nav .nav-link:focus-visible {
+  background-color: var(--color-sage);
+  color: white;
+  outline: 3px solid var(--color-sage);
+  outline-offset: 2px;
 }
