@@ -28,57 +28,74 @@ ALT TEXT to be improved, image styles to be tweaked-->
   <!-- Navigation bar -->
   <div id="nav-placeholder"></div>
 
-<main class="container page-content py-5 flex-grow-1">
-      <h1>Useful Links</h1>
+  <main class="container page-content py-4 py-lg-5 flex-grow-1">
+    <section class="links-page" aria-labelledby="links-heading">
+      <div class="links-hero">
+        <p class="eyebrow">Helpful resources</p>
+        <h1 id="links-heading">Useful links</h1>
+        <p>Below are trusted organisations and information sources that may be helpful when navigating cancer care,
+          support and wellbeing.</p>
+      </div>
 
+      <div class="links-grid">
+        <article class="resource-card">
+          <div class="resource-logo">
+            <img src="images/Macmillan_Cancer_Support_logo.png" alt="Macmillan Cancer Support logo" width="318"
+              height="74">
+          </div>
+          <div class="resource-body">
+            <h2>Macmillan Cancer Support</h2>
+            <p>Macmillan provides practical, emotional and financial support for people affected by cancer, while
+              working to
+              improve cancer care across the UK.</p>
+          </div>
+          <a href="https://www.macmillan.org.uk/cancer-information-and-support" target="_blank"
+            rel="noopener noreferrer" title="Macmillan Cancer Support" class="resource-link">
+            Visit website <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </article>
 
-      <p>Below are websites that you may find useful:</p>
-      <a href="https://www.macmillan.org.uk/cancer-information-and-support" target="_blank" rel="noopener noreferrer"
-        title="Macmillan Cancer Support" class="charity-link">
+        <article class="resource-card">
+          <div class="resource-logo nhs-logo">
+            <img src="images/NHSLogo.jpg" alt="NHS logo" width="132" height="54">
+          </div>
+          <div class="resource-body">
+            <h2>NHS website</h2>
+            <p>Find clear, reliable information and services to help you manage your health and understand the care and
+              support available to you.</p>
+          </div>
+          <a href="https://www.nhs.uk/" target="_blank" rel="noopener noreferrer" title="NHS Website"
+            class="resource-link">
+            Visit website <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </article>
 
-        <img src="images/Macmillan_Cancer_Support_logo.png" alt="Macmillan Cancer Support logo" width="318" height="74"
-          style="display: block; margin-left: auto; margin-right: auto;">
-
-        Macmillan Cancer Support improves the lives of people affected by cancer. We provide practical, medical
-        and financial support and push for better cancer care. Cancer affects us all. We can all help. We are
-        Macmillan.
-        
-      </a>
-
-
-
-      <a href="https://www.nhs.uk/" target="_blank" rel="noopener noreferrer" title="NHS Website" class="charity-link">
-
-        <img src="images/NHSLogo.jpg" alt="Macmillan Cancer Support logo" width="132" height="54"
-          style="display: block; margin-left: auto; margin-right: auto;">
-
-         NHS website for England - 
-        Find information and services to help you manage your health. The NHS website is packed with useful and clear health information.
-      </a>
-
-
-      <a href="https://www.cancerresearchuk.org/about-cancer" target="_blank" rel="noopener noreferrer"
-        title="Macmillan Cancer Support" class="charity-link">
-
-        <img src="images/CRUlogo.gif" alt="CRUlogo" width="159" height="62"
-          style="display: block; margin-left: auto; margin-right: auto;">
-
-        Reliable, easy to understand patient information from Cancer Research UK.
-      </a>
-
-
-
-    </div>
+        <article class="resource-card">
+          <div class="resource-logo">
+            <img src="images/CRUlogo.gif" alt="Cancer Research UK logo" width="159" height="62">
+          </div>
+          <div class="resource-body">
+            <h2>Cancer Research UK</h2>
+            <p>Reliable, easy-to-understand patient information and expert guidance on cancer causes, treatment and
+              living with the disease.</p>
+          </div>
+          <a href="https://www.cancerresearchuk.org/about-cancer" target="_blank" rel="noopener noreferrer"
+            title="Cancer Research UK" class="resource-link">
+            Visit website <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </article>
+      </div>
+    </section>
   </main>
 
-<div id="footer-placeholder"></div>
-<script>
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("footer-placeholder").innerHTML = data;
-    });
-</script>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
 
 
 </body>
