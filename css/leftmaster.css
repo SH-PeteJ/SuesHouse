@@ -341,7 +341,254 @@ p {
 .donations-page h4 {
   color: #557a68;
 }
+/* =========================================================
+   VOLUNTEERS / VACANCIES PAGE
+   ========================================================= */
 
+.vacancy-hero {
+  margin: 30px auto 50px;
+  padding: 60px 30px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #dff4e3, #e7d9f7);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.vacancy-hero-icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #557a68;
+  color: white;
+  font-size: 2rem;
+}
+
+.vacancy-hero h1 {
+  margin-bottom: 10px;
+  color: #557a68;
+  font-weight: 700;
+}
+
+.vacancy-hero h2 {
+  color: #6d3623;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.hero-intro {
+  color: #557a68;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.hero-text {
+  max-width: 750px;
+  margin: 15px auto 0;
+}
+
+
+/* Introduction */
+
+.volunteer-intro {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+.volunteer-intro h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #557a68;
+  font-weight: 700;
+}
+
+
+/* Section heading */
+
+.section-heading {
+  margin-bottom: 35px;
+}
+
+.section-heading span {
+  color: #c9826b;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.section-heading h2 {
+  margin-top: 5px;
+  color: #557a68;
+  font-weight: 700;
+}
+
+.section-heading p {
+  color: #555;
+}
+
+
+/* Volunteer cards */
+
+.volunteer-card {
+  padding: 30px 25px;
+  background: #ffffff;
+  border: 1px solid #d5e2d8;
+  border-radius: 20px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.volunteer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+}
+
+.volunteer-icon {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: #d9ead3;
+  color: #557a68;
+  font-size: 1.5rem;
+}
+
+.volunteer-card h3 {
+  color: #557a68;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.volunteer-card p {
+  color: #303936;
+  font-size: 1rem;
+}
+
+
+/* Call to action */
+
+.volunteer-cta {
+  margin: 70px auto 50px;
+  max-width: 850px;
+  padding: 45px 30px;
+  border-radius: 25px;
+  background: #557a68;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cta-icon {
+  font-size: 2.5rem;
+  color: #e8d8a8;
+  margin-bottom: 15px;
+}
+
+.volunteer-cta h2 {
+  color: white;
+  font-weight: 700;
+}
+
+.volunteer-cta p {
+  max-width: 650px;
+  margin: 15px auto 25px;
+  color: white;
+}
+
+.volunteer-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 25px;
+  background: #e8d8a8;
+  color: #303936;
+  font-weight: 700;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.volunteer-button:hover {
+  background: #ffffff;
+  color: #557a68;
+}
+
+
+/* DBS notice */
+
+.dbs-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 60px;
+  padding: 25px;
+  border-left: 6px solid #c9826b;
+  border-radius: 10px;
+  background: #fff7f2;
+}
+
+.dbs-notice > i {
+  color: #c9826b;
+  font-size: 2rem;
+}
+
+.dbs-notice h2 {
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+  color: #557a68;
+  font-weight: 700;
+}
+
+.dbs-notice p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .vacancy-hero {
+    margin-top: 20px;
+    padding: 40px 20px;
+    border-radius: 18px;
+  }
+
+  .vacancy-hero h1 {
+    font-size: 2rem;
+  }
+
+  .vacancy-hero h2 {
+    font-size: 1.25rem;
+  }
+
+  .volunteer-intro {
+    padding: 0 5px;
+  }
+
+  .volunteer-card {
+    padding: 25px 20px;
+  }
+
+  .volunteer-cta {
+    margin-top: 50px;
+    padding: 35px 20px;
+    border-radius: 18px;
+  }
+
+  .dbs-notice {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 20px;
+  }
+
+}
 /* Cards */
 .card {
   width: 100%;
