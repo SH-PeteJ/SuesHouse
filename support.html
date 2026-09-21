@@ -27,35 +27,116 @@
   <!-- Navigation bar -->
   <div id="nav-placeholder"></div>
 
-  <main class="container page-content py-5 flex-grow-1">
+  <main class="container page-content py-4 py-lg-5 flex-grow-1">
 
-    <h1>Support</h1>
-    <h2>Counselling and Support</h2>
-    <p>There are times in our lives when we may need extra support to help us get through the dark and lonely days.
-      Seeking help might not always be easy, particularly after being diagnosed with Cancer. Working together in an
-      empathetic, safe, non-judgemental, and
-      confidential environment, Sue’s House provides counselling sessions to patients and carers to help them express
-      their
-      issues and enable them to be able to cope better.</p>
-    <p>Our counsellor Suhaila Tauheed, who is trained and qualified in counselling and humanistic psychology, works
-      in line with the BACP’s ethical framework.
-      Suhaila is committed to delivering high quality counselling to patients and carers.</p>
-    <p>She is a compassionate person and feels passionately about helping people. Suhaila works with patients to
-      help them manage their emotional pain and have a
-      better quality of life.</p>
+    <section class="support-hero" aria-labelledby="support-heading">
+      <div class="support-hero-copy">
+        <p class="eyebrow">Counselling &amp; support</p>
+        <h1 id="support-heading">Support for patients and carers</h1>
+        <p class="lead">There are times in our lives when extra support can make a meaningful difference. At Sue’s
+          House,
+          we offer confidential counselling in a calm, welcoming setting to help people feel heard, supported and better
+          able to cope.</p>
 
-    <img src="images/counsel1.jpg" alt="Suhaila Tauheed, counsellor at Sue's House" class="counsellor-image img-fluid">
+        <div class="support-actions">
+          <a href="contact.html" class="btn support-btn-primary">Arrange support</a>
+          <a href="home.html" class="btn support-btn-secondary">Learn more</a>
+        </div>
+
+        <div class="support-metrics" aria-label="Key service benefits">
+          <div class="metric">
+            <strong>Confidential</strong>
+            <span>Private, respectful care</span>
+          </div>
+          <div class="metric">
+            <strong>Compassionate</strong>
+            <span>Person-centred support</span>
+          </div>
+          <div class="metric">
+            <strong>Professional</strong>
+            <span>Guided by ethical standards</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="support-portrait">
+        <img src="images/counsel1.jpg" alt="Suhaila Tauheed, counsellor at Sue's House"
+          class="counsellor-image img-fluid">
+        <div class="support-badge">
+          <strong>Suhaila Tauheed</strong>
+          <span>Qualified counsellor</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="support-intro" aria-labelledby="approach-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Our approach</p>
+        <h2 id="approach-heading">Counselling that is empathetic, informed and professional</h2>
+      </div>
+      <p>Seeking help can feel difficult, especially during or after a cancer diagnosis. We provide a safe,
+        non-judgemental
+        environment where patients and carers can explore their feelings, process difficult experiences and build
+        practical
+        ways to cope with life’s challenges.</p>
+    </section>
+
+    <section class="support-grid" aria-label="Counselling services and benefits">
+      <article class="support-card">
+        <div class="support-icon"><i class="bi bi-shield-check" aria-hidden="true"></i></div>
+        <h3>Safe and confidential</h3>
+        <p>Sessions are delivered in a calm, supportive environment where privacy and trust are prioritised.</p>
+      </article>
+
+      <article class="support-card">
+        <div class="support-icon"><i class="bi bi-heart-pulse" aria-hidden="true"></i></div>
+        <h3>Tailored to you</h3>
+        <p>Support is shaped around your individual experience, helping you make sense of what you are feeling.</p>
+      </article>
+
+      <article class="support-card">
+        <div class="support-icon"><i class="bi bi-people" aria-hidden="true"></i></div>
+        <h3>For patients and carers</h3>
+        <p>We recognise that cancer affects the whole family and can create emotional strain for both patients and
+          carers.</p>
+      </article>
+    </section>
+
+    <section class="support-detail" aria-labelledby="support-detail-heading">
+      <div class="detail-copy">
+        <p class="eyebrow">Who it is for</p>
+        <h2 id="support-detail-heading">Support designed around your needs</h2>
+        <ul class="check-list">
+          <li>People coping with a cancer diagnosis or treatment.</li>
+          <li>Carers and family members managing emotional strain.</li>
+          <li>Anyone seeking a compassionate space to talk, reflect and recover.</li>
+        </ul>
+      </div>
+
+      <aside class="detail-panel" aria-label="Professional standards">
+        <p class="eyebrow panel-eyebrow">Professional standards</p>
+        <h3>High-quality, ethical counselling</h3>
+        <p>Our counsellor, Suhaila Tauheed, is trained and qualified in counselling and humanistic psychology and works
+          in
+          line with the BACP ethical framework.</p>
+        <ul class="detail-points">
+          <li>Qualified and experienced counsellor</li>
+          <li>Evidence-based, person-centred practice</li>
+          <li>Committed to compassionate care</li>
+        </ul>
+      </aside>
+    </section>
 
   </main>
 
-<div id="footer-placeholder"></div>
-<script>
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("footer-placeholder").innerHTML = data;
-    });
-</script>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
 
 
 </body>
