@@ -29,90 +29,84 @@
   <!-- Navigation bar -->
   <div id="nav-placeholder"></div>
 
-<main class="container page-content py-5 flex-grow-1">
-    <h1>Trustees</h1>
-
-    <div class="row gx-0">
-      <div class="col-12 col-md-3 d-flex justify-content-center align-items-center p-1 profile-bg">
-        <img src="images/suhaila.jpg" alt="Suhaila Tauheed">
+  <main class="container page-content py-4 py-lg-5 flex-grow-1">
+    <section class="trustees-page" aria-labelledby="trustees-heading">
+      <div class="trustees-hero">
+        <p class="eyebrow">Leadership</p>
+        <h1 id="trustees-heading">Our trustees</h1>
+        <p>Our trustees bring experience, compassion and strategic oversight to support the work of Sue's House and help
+          guide the charity in delivering high-quality services and sustainable care.</p>
       </div>
 
+      <article class="trustee-profile">
+        <div class="profile-card profile-card-portrait">
+          <img src="images/suhaila.jpg" alt="Suhaila Tauheed" class="profile-photo profile-photo-left">
+          <div class="profile-copy">
+            <div class="profile-header">
+              <h2>Suhaila Tauheed</h2>
+              <span class="profile-role">Trustee</span>
+            </div>
+            <p>Having a strong medical background and vast experience as a counsellor and psychotherapist, Suhaila
+              became a
+              Trustee of Sue's House in March 2015. She helps ensure Sue's House remains true to its original purpose
+              and
+              continues to operate effectively in line with its charitable objectives.</p>
+            <p>Since the death of Gerald Reading in January 2021, Suhaila has been responsible for maintaining
+              compliance with
+              Charity Commission requirements and other regulatory obligations, particularly during the Covid-19
+              pandemic.</p>
+          </div>
+        </div>
+      </article>
 
-      <div class="col-12 col-md-9">
-        <h1>Suhaila Tauheed</h1>
+      <article class="trustee-profile">
+        <div class="profile-card profile-card-portrait profile-card-alternate">
+          <img src="images/simon.jpg" alt="Simon Lukes" class="profile-photo profile-photo-right">
+          <div class="profile-copy">
+            <div class="profile-header">
+              <h2>Simon Lukes</h2>
+              <span class="profile-role">Trustee</span>
+            </div>
+            <p>I was introduced to Sue's House after spending a week at the Bristol Cancer Help Centre in 2002. I am a
+              strong
+              believer in emotional healing and have been receiving support at Sue's House ever since. I have worked and
+              volunteered in the voluntary and community sector for most of my adult life, with experience across
+              practical,
+              administrative and leadership roles.</p>
+          </div>
+        </div>
+      </article>
 
-        <p class="p-3 fs-5 bg-light">
-          Having a strong medical background and vast experience as a counsellor and psychotherapist,
-          Suhaila became a Trustee of Sue’s House in March 2015. Suhaila helps make sure Sue’s House
-          is carrying out its purposes for which it was set up in 1984. She also assisted Gerald Reading
-          in maintaining the smooth running of all day to day responsibilities.
-
-          Since the death of Gerald Reading in January 2021, Suhaila has been responsible for making
-          sure Sue’s House is kept up to date with Charity Commission and all other authorities’
-          requirements, especially during the Covid-19 pandemic, ensuring the charity is adhering
-          to all government guidelines.
-        </p>
-      </div>
-    </div>
-
-    <!--Simon-->
-
-    <div class="row gx-0">
-      <div class="col-12 col-md-9">
-        <h1 class="text-end">Simon Lukes</h1>
-        <p class="p-3 fs-5 bg-light">
-          I was introduced to Sue's House after spending a week at the Bristol Cancer Help Centre
-          (now called Penny Brohn Cancer Care) in 2002. I am a great believer in emotional healing
-          and I have been coming to Sue's House for treatment ever since. I have worked and volunteered
-          in the voluntary/community sector most of my adult life mainly in "hands-on" roles but also
-          doing a lot of administration and management.
-        </p>
-      </div>
-      <div class="col-12 col-md-3 d-flex justify-content-center align-items-center p-1 profile-bg">
-        <img src="images/simon.jpg" alt="Simon Lukes">
-
-      </div>
-    </div>
-
-    <!--Aqida-->
-
-
-    <!-- Aqida -->
-
-    <div class="row gx-0">
-
-      <div class="col-12 col-md-3 d-flex justify-content-center align-items-center p-1 profile-bg">
-        <img src="images/aqida.png" alt="Aqida Abbasi">
-      </div>
-
-      <div class="col-12 col-md-9">
-        <h1>Aqida Abbasi </h1>
-
-        <p class="p-3 fs-5 bg-light">
-          I joined Sue's House this year as a volunteer. This is a wonderful charity, very friendly,
-          enthusiastic and great team to work with. I am a retired NHS nurse practitioner with 46 years
-          of service. I am a community person bringing in experiences of working with other charities,
-          involved with Seven Kings Hubb project as well as working part time with my local school as
-          an exam invigilator. I have served the community as a Justice of the Peace for over 15 years.
-        </p>
-      </div>
-
-    </div>
-
-
-
-
-
+      <article class="trustee-profile">
+        <div class="profile-card profile-card-portrait">
+          <img src="images/aqida.png" alt="Aqida Abbasi" class="profile-photo profile-photo-left">
+          <div class="profile-copy">
+            <div class="profile-header">
+              <h2>Aqida Abbasi</h2>
+              <span class="profile-role">Trustee</span>
+            </div>
+            <p>I joined Sue's House as a volunteer and have been inspired by the warmth, enthusiasm and commitment of
+              the team.
+              I am a retired NHS nurse practitioner with 46 years of service and bring a strong community-focused
+              perspective
+              shaped by my work with local charities and public service.</p>
+            <p>My background includes long-standing involvement with the Seven Kings Hub project and work as a Justice
+              of the
+              Peace, alongside experience supporting community wellbeing and education initiatives.</p>
+          </div>
+        </div>
+      </article>
+    </section>
   </main>
 
-<div id="footer-placeholder"></div>
-<script>
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("footer-placeholder").innerHTML = data;
-    });
-</script>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
 
 
 </body>
