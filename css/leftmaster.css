@@ -350,7 +350,6 @@ p {
   padding-bottom: 60px;
 }
 
-
 /* ---------------------------------------------------------
    HERO
    --------------------------------------------------------- */
@@ -360,7 +359,7 @@ p {
   padding: 55px 25px;
   border-radius: 25px;
   background: linear-gradient(135deg, #dff4e3, #e7d9f7);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .nutrition-icon {
@@ -393,7 +392,6 @@ p {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-
 
 /* ---------------------------------------------------------
    INTRODUCTION
@@ -444,7 +442,6 @@ p {
   margin-bottom: 0;
 }
 
-
 /* ---------------------------------------------------------
    ALOE SECTION
    --------------------------------------------------------- */
@@ -474,7 +471,6 @@ p {
 .aloe-heading p {
   margin-bottom: 0;
 }
-
 
 /* ---------------------------------------------------------
    ALOE INFORMATION CARD
@@ -518,7 +514,6 @@ p {
   color: #303936;
 }
 
-
 /* ---------------------------------------------------------
    ALOE HIGHLIGHT
    --------------------------------------------------------- */
@@ -554,7 +549,6 @@ p {
   font-size: 1rem;
 }
 
-
 /* ---------------------------------------------------------
    WELLBEING CARD
    --------------------------------------------------------- */
@@ -569,7 +563,7 @@ p {
 
   border-radius: 22px;
 
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .wellbeing-icon {
@@ -590,13 +584,11 @@ p {
   color: #303936;
 }
 
-
 /* ---------------------------------------------------------
    MOBILE
    --------------------------------------------------------- */
 
 @media (max-width: 600px) {
-
   .nutrition-page {
     padding-top: 15px;
     padding-bottom: 40px;
@@ -646,7 +638,6 @@ p {
     padding: 30px 20px;
     border-radius: 18px;
   }
-
 }
 /* =========================================================
    VOLUNTEERS / VACANCIES PAGE
@@ -696,7 +687,6 @@ p {
   margin: 15px auto 0;
 }
 
-
 /* Introduction */
 
 .volunteer-intro {
@@ -711,7 +701,6 @@ p {
   color: #557a68;
   font-weight: 700;
 }
-
 
 /* Section heading */
 
@@ -736,7 +725,6 @@ p {
   color: #555;
 }
 
-
 /* Volunteer cards */
 
 .volunteer-card {
@@ -745,7 +733,9 @@ p {
   border: 1px solid #d5e2d8;
   border-radius: 20px;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .volunteer-card:hover {
@@ -777,7 +767,6 @@ p {
   color: #303936;
   font-size: 1rem;
 }
-
 
 /* Call to action */
 
@@ -824,7 +813,6 @@ p {
   color: #557a68;
 }
 
-
 /* DBS notice */
 
 .dbs-notice {
@@ -856,11 +844,9 @@ p {
   font-size: 1rem;
 }
 
-
 /* Mobile */
 
 @media (max-width: 600px) {
-
   .vacancy-hero {
     margin-top: 20px;
     padding: 40px 20px;
@@ -894,7 +880,6 @@ p {
     margin-right: 5px;
     padding: 20px;
   }
-
 }
 /* Cards */
 .card {
@@ -1904,8 +1889,8 @@ table {
   .sidebar-navbar {
     position: relative;
     width: 100%;
+    min-height: 100vh;
     height: auto;
-    min-height: 0;
     padding: 0.75rem 1rem;
   }
 
@@ -2091,6 +2076,19 @@ table {
 
   .footer-links {
     justify-content: center;
+  }
+}
+
+/* Keep the news carousel from changing the mobile document height between slides. */
+@media (max-width: 767.98px) {
+  #carouselExampleIndicators .carousel-inner,
+  #carouselExampleIndicators .carousel-item {
+    height: 300px;
+  }
+
+  #carouselExampleIndicators .carousel-item img {
+    height: 300px;
+    object-fit: cover;
   }
 }
 
