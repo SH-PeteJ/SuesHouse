@@ -209,6 +209,136 @@ p {
   text-decoration: none;
 }
 
+/* Sponsors page enhancements */
+.sponsors-page {
+  width: 100%;
+}
+
+.sponsors-hero {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 1.5rem;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(217, 234, 211, 0.8), rgba(255, 255, 255, 0.9));
+  border: 1px solid rgba(85, 122, 104, 0.12);
+  border-radius: 26px;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  box-shadow: 0 18px 40px rgba(48, 57, 54, 0.06);
+  margin-bottom: 1.75rem;
+}
+
+.sponsors-copy h1 {
+  margin-bottom: 0.8rem;
+}
+
+.sponsors-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.sponsor-highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(85, 122, 104, 0.12);
+  border-radius: 20px;
+  padding: 1.5rem 1rem;
+  min-height: 150px;
+}
+
+.highlight-label {
+  display: block;
+  color: var(--color-sage);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.sponsor-highlight strong {
+  color: var(--color-sage);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1;
+}
+
+.sponsor-highlight small {
+  color: var(--color-charcoal);
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.sponsor-story,
+.sponsor-signoff {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 1.5rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(85, 122, 104, 0.12);
+  border-radius: 22px;
+  padding: clamp(1.25rem, 2vw, 2rem);
+  box-shadow: 0 12px 28px rgba(48, 57, 54, 0.04);
+  margin-bottom: 1.5rem;
+}
+
+.story-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.story-image img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 14px 24px rgba(48, 57, 54, 0.08);
+}
+
+.story-image-right img {
+  max-height: 320px;
+}
+
+.story-image-left img {
+  max-height: 320px;
+}
+
+.story-text {
+  color: var(--color-charcoal);
+}
+
+.story-text p {
+  margin-bottom: 1rem;
+}
+
+.story-text p:last-child {
+  margin-bottom: 0;
+}
+
+.signature-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.4rem;
+  padding-left: 0.5rem;
+}
+
+.signature-block h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.signature-block p {
+  margin: 0;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: var(--color-sage);
+  font-weight: 700;
+}
+
 /* Support page enhancements */
 .support-hero {
   display: grid;

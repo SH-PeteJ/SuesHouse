@@ -27,36 +27,61 @@
   <!-- Navigation bar -->
   <div id="nav-placeholder"></div>
 
-<main class="container page-content py-5 flex-grow-1">
-    <h1>Supporters</h1>
+  <main class="container page-content py-4 py-lg-5 flex-grow-1">
+    <section class="sponsors-page" aria-labelledby="sponsors-heading">
+      <div class="sponsors-hero">
+        <div class="sponsors-copy">
+          <p class="eyebrow">Supporters</p>
+          <h1 id="sponsors-heading">Thank you to our supporters</h1>
+          <p>We are grateful to the organisations and individuals who invest in our mission and help make Sue's House a
+            place of comfort, care and practical support for those affected by cancer.</p>
+        </div>
+        <div class="sponsor-highlight">
+          <span class="highlight-label">Recent donation</span>
+          <strong>£250</strong>
+          <small>Leo 80 and team</small>
+        </div>
+      </div>
 
-    <div class="pad15-imageright">
-      <img src="images/leo80a.jpg" alt="Leo 80 cheque presentation" height="300">
-    </div>
+      <div class="sponsor-story">
+        <div class="story-image story-image-right">
+          <img src="images/leo80a.jpg" alt="Leo 80 cheque presentation" class="img-fluid">
+        </div>
 
+        <div class="story-text">
+          <p>80s Leo visited Sue's House to make a generous contribution of £200 from their organisation, alongside a
+            further £50 donated personally. This thoughtful support reflects the value of community-led giving and
+            recognises
+            the difference made through our work.</p>
+          <p>We are sincerely grateful for their generosity and for taking the time to acknowledge the care, dedication
+            and
+            hard work happening at Sue's House. We hope to build on this relationship and continue working together in
+            the
+            future.</p>
+        </div>
+      </div>
 
+      <div class="sponsor-signoff">
+        <div class="signature-block">
+          <h2>With thanks</h2>
+          <p>Suhaila</p>
+        </div>
 
-    <p> 80's Leo visited Sue's House today to generously donate £200 from their organisation and another £50
-      personally. We thank them for their donation and recognising and appreciating the hard work happening at
-      Sue's House. We hope to keep in touch!</p>
-    <h2>Thanks</h2>
-    <h2>Suhaila</h2>
-    <div class="pad15-imageleft">
-      <img src="images/leo80.jpg" alt="Leo 80 cheque presentation" height="300">
-    </div>
-
-    <div class="clearfix"></div>
-
+        <div class="story-image story-image-left">
+          <img src="images/leo80.jpg" alt="Leo 80 presentation photograph" class="img-fluid">
+        </div>
+      </div>
+    </section>
   </main>
 
-<div id="footer-placeholder"></div>
-<script>
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("footer-placeholder").innerHTML = data;
-    });
-</script>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
 
 </body>
 
