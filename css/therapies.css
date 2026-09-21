@@ -1,0 +1,241 @@
+:root {
+  --therapy-ink: #253b3d;
+  --therapy-teal: #216b6c;
+  --therapy-teal-dark: #174f51;
+  --therapy-line: #dbe6e2;
+  --therapy-paper: #ffffff;
+  --therapy-wash: #f1f6f3;
+}
+
+.therapies-page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2rem clamp(1rem, 4vw, 3.5rem) 5rem;
+  color: var(--therapy-ink);
+}
+
+.therapies-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 310px;
+  margin-bottom: 4rem;
+  padding: clamp(2rem, 6vw, 4.5rem);
+  overflow: hidden;
+  background: linear-gradient(112deg, #e4f0eb 0%, #f7faf7 72%);
+  border-left: 7px solid var(--therapy-teal);
+}
+
+.therapies-hero-content {
+  max-width: 630px;
+  position: relative;
+  z-index: 1;
+}
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--therapy-teal);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+.therapies-hero h1 {
+  margin: 0 0 1rem;
+  color: var(--therapy-ink);
+  font-size: clamp(2.4rem, 5vw, 4.3rem);
+  line-height: 1.05;
+}
+.hero-lead {
+  max-width: 570px;
+  margin-bottom: 1.6rem;
+  color: #476061;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+}
+.hero-link,
+.text-link {
+  color: var(--therapy-teal-dark);
+  font-weight: 800;
+  text-decoration: none;
+}
+.hero-link i,
+.text-link i {
+  margin-left: 0.45rem;
+  transition: margin-left 0.2s ease;
+}
+.hero-link:hover i,
+.text-link:hover i {
+  margin-left: 0.7rem;
+}
+.hero-mark {
+  position: absolute;
+  right: clamp(2rem, 8vw, 7rem);
+  color: rgba(33, 107, 108, 0.12);
+  font-size: clamp(8rem, 22vw, 16rem);
+  line-height: 1;
+}
+
+.therapies-intro {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.9fr) 1.1fr;
+  gap: 3rem;
+  align-items: end;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--therapy-line);
+}
+.therapies-intro h2,
+.therapy-video h2 {
+  margin: 0;
+  color: var(--therapy-ink);
+  font-size: clamp(1.6rem, 3vw, 2.35rem);
+  line-height: 1.15;
+}
+.therapies-intro > p {
+  margin: 0;
+  color: #536968;
+  font-size: 1.05rem;
+}
+
+.therapy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.35rem;
+  margin-bottom: 5rem;
+}
+.therapy-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--therapy-paper);
+  border: 1px solid var(--therapy-line);
+  box-shadow: 0 8px 24px rgba(37, 59, 61, 0.07);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.therapy-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(37, 59, 61, 0.12);
+}
+.therapy-image {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--therapy-wash);
+}
+.therapy-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.therapy-card-body {
+  position: relative;
+  flex: 1;
+  padding: 1.5rem 1.5rem 1.35rem;
+}
+.therapy-number {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--therapy-teal);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+.therapy-card h2 {
+  margin: 0 0 0.65rem;
+  color: var(--therapy-ink);
+  font-size: 1.45rem;
+}
+.therapy-card p {
+  margin-bottom: 1.25rem;
+  color: #536968;
+  font-size: 0.98rem;
+}
+.therapy-card .availability {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin: auto 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--therapy-line);
+  color: var(--therapy-teal-dark);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.therapy-video {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  background: var(--therapy-ink);
+}
+.therapy-video h2 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.therapy-video .eyebrow {
+  color: #9fd1c5;
+}
+.video-copy > p:not(.eyebrow) {
+  margin-bottom: 1.5rem;
+  color: #c9dbd5;
+}
+.therapy-video .text-link {
+  color: #a9dfd0;
+}
+.video-frame {
+  aspect-ratio: 16 / 9;
+  background: #13292b;
+}
+.video-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 850px) {
+  .therapy-grid {
+    grid-template-columns: 1fr;
+  }
+  .therapy-card {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.8fr) 1.2fr;
+  }
+  .therapy-image {
+    height: 100%;
+    aspect-ratio: auto;
+  }
+  .therapy-video {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .therapies-page {
+    padding-top: 1rem;
+  }
+  .therapies-hero {
+    min-height: 360px;
+    margin-bottom: 3rem;
+    padding: 2rem 1.5rem;
+    align-items: flex-end;
+  }
+  .hero-mark {
+    top: 1rem;
+    right: 1rem;
+    font-size: 9rem;
+  }
+  .therapies-intro {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+  .therapy-card {
+    display: flex;
+  }
+  .therapy-image {
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+  .therapy-video {
+    padding: 1.5rem;
+  }
+}
