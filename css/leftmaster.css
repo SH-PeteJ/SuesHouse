@@ -1039,9 +1039,11 @@ p {
 
 .site-header-image img {
   display: block;
-  width: 100%;
+  width: 50%; /*Was 100% but reduced to make header less imposing*/
   height: auto;
-  border-radius: 20px;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 25px;
 }
 .counsellor-image {
   display: block;
