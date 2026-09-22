@@ -1148,6 +1148,11 @@ p {
   background: var(--color-charcoal);
 }
 
+.news-page .news-carousel,
+.news-page .news-carousel .carousel-inner {
+  overflow: hidden;
+}
+
 .news-carousel .carousel-inner,
 .news-carousel .carousel-item {
   height: 420px;
