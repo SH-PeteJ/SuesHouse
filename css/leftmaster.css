@@ -1349,6 +1349,236 @@ p {
   text-align: center;
 }
 
+.volunteers-page {
+  max-width: 1120px;
+}
+
+.volunteers-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+  padding: clamp(2rem, 5vw, 4rem);
+  background: var(--color-ivory);
+  border: 1px solid rgba(85, 122, 104, 0.16);
+  border-top: 5px solid var(--color-terracotta);
+  border-radius: 16px;
+  box-shadow: 0 14px 32px rgba(48, 57, 54, 0.09);
+}
+
+.volunteers-kicker {
+  margin: 0 0 0.55rem;
+  color: var(--color-terracotta);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.volunteers-hero h1 {
+  max-width: 650px;
+  margin-bottom: 1rem;
+  color: var(--color-sage);
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  font-weight: 700;
+}
+
+.volunteers-hero-copy > p:not(.volunteers-kicker) {
+  max-width: 650px;
+  margin-bottom: 1.5rem;
+  color: #46534b;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.volunteers-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.volunteers-hero-panel {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1.5rem;
+  background: var(--color-sage);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.volunteers-hero-panel i {
+  color: var(--color-gold);
+  font-size: 2.4rem;
+}
+
+.volunteers-hero-panel strong {
+  font-size: 1.15rem;
+}
+
+.volunteers-hero-panel span {
+  color: #e4eee8;
+  font-size: 0.95rem;
+}
+
+.volunteer-button {
+  border-radius: 6px;
+}
+
+.volunteers-secondary-link {
+  color: var(--color-sage);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.volunteers-secondary-link:hover,
+.volunteers-secondary-link:focus-visible {
+  color: var(--color-terracotta);
+}
+
+.volunteers-intro-panel {
+  max-width: 850px;
+  margin: 0 auto 3.5rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.volunteers-intro-panel h2 {
+  margin-bottom: 0.8rem;
+  color: var(--color-sage);
+  font-weight: 700;
+}
+
+.volunteers-intro-panel p:last-child {
+  margin-bottom: 0;
+  color: #46534b;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.volunteers-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.volunteers-section-heading p {
+  max-width: 360px;
+  margin: 0;
+  color: #53655b;
+  font-size: 0.98rem;
+  text-align: right;
+}
+
+.volunteers-carousel {
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--color-charcoal);
+}
+
+.volunteers-carousel .carousel-inner,
+.volunteers-carousel .carousel-item {
+  min-height: 330px;
+}
+
+.volunteer-profile {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
+  align-items: stretch;
+  min-height: 330px;
+  background: var(--color-ivory);
+}
+
+.volunteer-profile-image {
+  min-height: 330px;
+  background: var(--color-sage-soft);
+}
+
+.volunteer-profile-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 330px;
+  object-fit: cover;
+}
+
+.volunteer-profile-content {
+  align-self: center;
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.volunteer-profile-content h2 {
+  margin-bottom: 1rem;
+  color: var(--color-sage);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+}
+
+.volunteer-profile-content h2 span {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--color-terracotta);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.volunteer-profile-content > p:last-child {
+  max-width: 600px;
+  margin: 0;
+  color: #46534b;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.volunteers-final-cta {
+  max-width: 900px;
+  margin-top: 0;
+}
+
+@media (max-width: 767.98px) {
+  .volunteers-hero {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+  }
+
+  .volunteers-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .volunteers-section-heading p {
+    text-align: left;
+  }
+
+  .volunteer-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .volunteer-profile-image,
+  .volunteer-profile-image img {
+    min-height: 220px;
+    max-height: 280px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .volunteers-hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .volunteers-hero-actions .volunteer-button {
+    justify-content: center;
+  }
+}
+
 .charity-link:last-child {
   margin-bottom: 10px;
 }
