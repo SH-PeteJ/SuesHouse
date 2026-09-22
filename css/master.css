@@ -1266,20 +1266,34 @@ figcaption {
 
 .footer-main {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) repeat(2, minmax(170px, 1fr));
+  grid-template-columns: minmax(190px, 0.85fr) minmax(0, 1.45fr) repeat(2, minmax(150px, 1fr));
   gap: 3rem;
   padding-bottom: 2.5rem;
+}
+
+.footer-award-column {
+  max-width: 230px;
+}
+
+.footer-award-column p {
+  margin: 0.75rem 0 0;
+  color: #d8e2dc;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  text-align: left;
 }
 
 .footer-brand {
   max-width: 390px;
 }
 
-.footer-logo {
+.footer .footer-logo {
+  display: block;
   width: auto;
-  max-width: 150px;
-  max-height: 72px;
+  max-width: 220px;
+  max-height: 150px;
   margin-bottom: 1rem;
+  object-fit: contain;
 }
 
 .footer-eyebrow {
@@ -1417,8 +1431,12 @@ figcaption {
   }
 
   .footer-brand {
-    grid-column: 1 / -1;
+    grid-column: 2 / -1;
     max-width: none;
+  }
+
+  .footer-award-column {
+    grid-row: span 2;
   }
 
   .footer-bottom {
@@ -1434,6 +1452,11 @@ figcaption {
 
   .footer-brand {
     grid-column: auto;
+  }
+
+  .footer-award-column {
+    max-width: none;
+    grid-row: auto;
   }
 }
 
@@ -1657,7 +1680,7 @@ figcaption {
 }
 
 .footer-logo {
-  max-width: 120px;
+  max-width: 220px;
   height: auto;
 }
 
