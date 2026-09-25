@@ -2,22 +2,6 @@
    GLOBAL LAYOUT
    ========================================================= */
 
-:root {
-  --color-sage: #557a68;
-  --color-sage-soft: #a9c3b5;
-  --color-mint: #d9ead3;
-  --color-ivory: #faf7f0;
-  --color-terracotta: #c9826b;
-  --color-gold: #e8d8a8;
-  --color-charcoal: #303936;
-  --color-cream: #fff8df;
-  --color-warm-white: #f8f9fa;
-  --color-muted-brown: #6d3623;
-  --color-warning: #ffc107;
-  --color-danger: #ad0837;
-  --color-danger-dark: #8f062d;
-}
-
 /* 15/09/2026 – Corrected body spacing for fixed navbar */
 body {
   margin: 0;
