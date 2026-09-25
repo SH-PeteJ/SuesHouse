@@ -28,7 +28,8 @@
 }
 
 body {
-  background: var(--site-mint);
+  background: var(--site-mint
+  );
   color: var(--site-ink);
   text-align: left;
   line-height: 1.6;
