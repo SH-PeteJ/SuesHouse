@@ -8,13 +8,13 @@
 }
 
 .contact-hero {
+  width: min(calc(100% - 2rem), 1120px);
   margin: 20px auto 50px;
   padding: 55px 25px;
   border-radius: 25px;
   background: linear-gradient(135deg, #dff4e3, #e7d9f7);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
-
 
 .contact-hero-inner {
   max-width: 760px;
