@@ -2,14 +2,21 @@
   width: min(100% - 2rem, 1280px);
   margin: 0 auto;
 }
-
+.donation-hero {
+  margin: 20px auto 50px;
+  padding: 55px 25px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #dff4e3, #e7d9f7);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+/*
 .donation-hero {
   padding: 3rem 0;
   background: var(--color-ivory);
   border-bottom: 1px solid rgba(85, 122, 104, 0.25);
   text-align: center;
 }
-
+*/
 .donation-hero h1 {
   margin: 0;
   color: var(--color-sage);
