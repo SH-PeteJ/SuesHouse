@@ -54,6 +54,10 @@
   line-height: 1.7;
 }
 
+.contact-hero .hero-intro {
+  text-align: left;
+}
+
 .contact-content {
   padding: 4rem 0;
 }
