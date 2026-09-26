@@ -1,0 +1,128 @@
+.trustees-page {
+  width: 100%;
+}
+
+.trustees-hero {
+  background: linear-gradient(135deg, rgba(217, 234, 211, 0.8), rgba(255, 255, 255, 0.9));
+  border: 1px solid rgba(85, 122, 104, 0.12);
+  border-radius: 26px;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  box-shadow: 0 18px 40px rgba(48, 57, 54, 0.06);
+  margin-bottom: 1.75rem;
+}
+
+.trustees-hero h1 {
+  margin-bottom: 0.8rem;
+}
+
+.trustees-hero p:last-child {
+  margin-bottom: 0;
+  max-width: 760px;
+}
+
+.trustee-profile {
+  margin-bottom: 1.5rem;
+}
+
+.profile-image-wrap {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(85, 122, 104, 0.12);
+  border-radius: 22px;
+  padding: 0.8rem;
+  box-shadow: 0 12px 26px rgba(48, 57, 54, 0.05);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image-wrap img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.profile-card {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(85, 122, 104, 0.12);
+  border-radius: 22px;
+  padding: clamp(1.25rem, 2vw, 2rem);
+  box-shadow: 0 12px 28px rgba(48, 57, 54, 0.04);
+  overflow: hidden;
+}
+
+.profile-card-portrait {
+  display: flow-root;
+}
+
+.profile-photo {
+  width: min(220px, 40vw);
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 22px rgba(48, 57, 54, 0.08);
+  margin: 0 1.25rem 0.75rem 0;
+  border: 1px solid rgba(85, 122, 104, 0.12);
+}
+
+.profile-photo-right {
+  float: right;
+  margin: 0 0 0.75rem 1.25rem;
+}
+
+.profile-card-alternate {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(217, 234, 211, 0.4));
+}
+
+.profile-copy {
+  overflow: hidden;
+}
+
+.profile-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.profile-header h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+}
+
+.profile-role {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(85, 122, 104, 0.1);
+  color: var(--color-sage);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.profile-card p {
+  margin-bottom: 0.9rem;
+}
+
+.profile-card p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .profile-photo,
+  .profile-photo-right {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto 1rem;
+  }
+}

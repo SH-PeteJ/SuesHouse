@@ -1,0 +1,23 @@
+.donations-page dt {
+  color: #86bb9f;
+}
+
+.donations-page h1 {
+  color: #557a68;
+}
+
+.donations-page dd {
+  color: #557a68;
+  font-size: medium;
+  font-weight: 700;
+}
+
+.donations-page p {
+  color: #557a68;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.donations-page h4 {
+  color: #557a68;
+}
