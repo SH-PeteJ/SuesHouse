@@ -252,3 +252,11 @@
 .detail-panel .detail-points li::before {
   color: #d9ead3;
 }
+
+@media (max-width: 767px) {
+  .support-hero,
+  .support-grid,
+  .support-detail {
+    grid-template-columns: 1fr;
+  }
+}
