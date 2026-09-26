@@ -1,22 +1,4 @@
-/* =========================================================
-   GLOBAL LAYOUT
-   ========================================================= */
-
-:root {
-  --color-sage: #557a68;
-  --color-sage-soft: #a9c3b5;
-  --color-mint: #d9ead3;
-  --color-ivory: #faf7f0;
-  --color-terracotta: #c9826b;
-  --color-gold: #e8d8a8;
-  --color-charcoal: #303936;
-  --color-cream: #fff8df;
-  --color-warm-white: #f8f9fa;
-  --color-muted-brown: #6d3623;
-  --color-warning: #ffc107;
-  --color-danger: #ad0837;
-  --color-danger-dark: #8f062d;
-}
+@import url("shared.css");
 
 /* 15/09/2026 – Corrected body spacing for fixed navbar */
 body {
@@ -29,77 +11,6 @@ body {
   line-height: 1.6;
   background: var(--color-mint);
   overflow-x: hidden;
-}
-main {
-  padding-top: 0;
-}
-
-.page-container {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 clamp(1rem, 3vw, 2rem);
-}
-
-.story-text {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Typography – fully responsive */
-h1 {
-  color: var(--color-sage);
-  font-size: clamp(2rem, 4vw, 2.8rem);
-}
-
-h2 {
-  color: var(--color-sage);
-}
-
-h3 {
-  color: var(--color-sage);
-  font-size: medium;
-}
-
-h4 {
-  color: var(--color-sage-soft);
-  font-size: clamp(1.4rem, 3vw, 2rem);
-}
-
-p {
-  color: var(--color-charcoal);
-  font-size: clamp(1rem, 2vw, 1.2rem);
-}
-
-.red-text {
-  color: red !important;
-}
-
-/* --------------------------------
-   Sue's House page
-   -------------------------------- */
-
-.hero {
-  background: linear-gradient(135deg, #dff4e3, #e7d9f7);
-}
-
-.hero-logo {
-  width: 140px;
-  max-width: 40%;
-}
-
-.award-box {
-  background: #f8f9fa;
-}
-
-.award-logo {
-  max-width: 120px;
 }
 
 /* =========================================================
@@ -209,14 +120,8 @@ p {
     transform 0.2s ease;
 }
 /*Sidebar button background colours below*/
-.sidebar-navbar .nav-about > .nav-link {
-  background-color: #a9c3b5;
-}
-
-.sidebar-navbar .nav-help > .nav-link {
-  background-color: #a9c3b5;
-}
-
+.sidebar-navbar .nav-about > .nav-link,
+.sidebar-navbar .nav-help > .nav-link,
 .sidebar-navbar .nav-team > .nav-link {
   background-color: #a9c3b5;
 }

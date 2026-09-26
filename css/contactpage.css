@@ -99,10 +99,7 @@
 
 /* Contact button */
 .row > .contact-button {
-  display: block;
   width: 33%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .contact-button {
