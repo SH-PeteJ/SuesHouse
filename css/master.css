@@ -90,19 +90,7 @@ body {
 
 */
 
-/* 15/09/2026 – Right-side navbar logo styling
-.nav-logo-right {
-  height: 180px;
-  width: auto;
-  display: block;
-}
-*/
-/* 15/09/2026 – Align right brand neatly
-.right-brand {
-  display: flex;
-  align-items: center;
-}
-*/
+
 /* 15/09/2026 – Mobile adjustments for dual logos */
 @media (max-width: 767px) {
   .nav-logo-right {
@@ -798,18 +786,7 @@ figcaption {
     justify-content: center;
   }
 }
-/* 15/09/2026 – Balance left and right navbar logos 
-.navbar-brand {
-  flex: 0 0 180px; /* fixed width anchor for both logos
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
- */
-/* 15/09/2026 – Right brand mirrors left brand spacing
-.right-brand {
-  justify-content: flex-end;
-}
+
  */
 /* 15/09/2026 – Centre menu stays centred */
 .charity-navbar .navbar-collapse {
