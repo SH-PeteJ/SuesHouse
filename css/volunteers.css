@@ -3,6 +3,10 @@
 }
 
 .volunteers-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  align-items: center;
+  gap: 2.5rem;
   margin: 20px auto 50px;
   padding: 55px 25px;
   border-radius: 25px;
