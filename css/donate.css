@@ -1,23 +1,123 @@
-.donations-page dt {
-  color: #86bb9f;
+.donation-container {
+  width: min(100% - 2rem, 1280px);
+  margin: 0 auto;
 }
 
-.donations-page h1 {
-  color: #557a68;
+.donation-hero {
+  padding: 3rem 0;
+  background: var(--color-ivory);
+  border-bottom: 1px solid rgba(85, 122, 104, 0.25);
+  text-align: center;
 }
 
-.donations-page dd {
-  color: #557a68;
-  font-size: medium;
+.donation-hero h1 {
+  margin: 0;
+  color: var(--color-sage);
   font-weight: 700;
 }
 
-.donations-page p {
-  color: #557a68;
-  font-size: larger;
+.donation-intro {
+  max-width: 720px;
+  margin: 1rem auto 0;
+  color: var(--color-charcoal);
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.donation-content {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.donation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.donation-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  padding: 1.5rem;
+  background: var(--color-ivory);
+  border: 1px solid rgba(85, 122, 104, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 8px 22px rgba(48, 57, 54, 0.08);
+  text-align: center;
+}
+
+.donation-icon {
+  margin-bottom: 1rem;
+  color: var(--color-sage);
+  font-size: 2.5rem;
+}
+
+.donation-card-title {
+  margin: 0 0 1rem;
+  color: var(--color-sage);
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
-.donations-page h4 {
-  color: #557a68;
+.donation-description {
+  margin: 0 0 1rem;
+  color: var(--color-charcoal);
+  font-size: 1rem;
+}
+
+.donation-action {
+  display: inline-block;
+  margin-top: auto;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--color-sage);
+  border-radius: 6px;
+  background: var(--color-sage);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.donation-action:hover,
+.donation-action:focus-visible {
+  background: #466a58;
+  border-color: #466a58;
+  color: #fff;
+}
+
+.donation-qr {
+  display: block;
+  width: min(100%, 180px);
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(48, 57, 54, 0.15);
+}
+
+.donation-bank-details {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 0.35rem 0.75rem;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}
+
+.donation-bank-details dt {
+  color: var(--color-sage);
+  font-weight: 600;
+}
+
+.donation-bank-details dd {
+  min-width: 0;
+  margin: 0;
+  color: var(--color-charcoal);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 767px) {
+  .donation-grid {
+    grid-template-columns: 1fr;
+  }
 }

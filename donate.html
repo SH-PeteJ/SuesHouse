@@ -26,11 +26,10 @@
   <div id="nav-placeholder"></div>
 
   <!-- Hero -->
-  <header class="py-5 text-center"
-    style="background: var(--color-ivory); border-bottom: 1px solid rgba(85,122,104,0.25);">
-    <div class="container">
-      <h1 class="fw-bold" style="color: var(--color-sage);">Support Sue’s House</h1>
-      <p class="lead mt-3" style="max-width: 720px; margin: 0 auto; color: var(--color-charcoal);">
+  <header class="donation-hero">
+    <div class="donation-container">
+      <h1>Support Sue’s House</h1>
+      <p class="donation-intro">
         As a Registered Charity (No. 299782), we rely entirely on donations, supporters and sponsors.
         Your contribution helps us continue providing free support to people affected by cancer.
       </p>
@@ -38,54 +37,46 @@
   </header>
 
   <!-- Main Content -->
-  <main class="container py-5">
+  <main class="donation-container donation-content">
 
-    <div class="row g-4">
+    <div class="donation-grid">
 
       <!-- Card 1 -->
-      <div class="col-md-4">
-        <div class="card p-4 text-center">
-          <i class="bi bi-credit-card fs-1 mb-3" style="color: var(--color-sage);"></i>
-          <h2 class="h4 fw-bold mb-3">Donate Online</h2>
-          <p class="mb-3">Make a secure online donation via SumUp.</p>
-          <a href="https://pay.sumup.com/b2c/QVL4DW3Z" target="_blank" rel="noopener noreferrer"
-            class="btn btn-success fw-bold" style="background: var(--color-sage); border-color: var(--color-sage);">
-            Donate Online
-          </a>
-        </div>
-      </div>
+      <section class="donation-card">
+        <i class="bi bi-credit-card donation-icon" aria-hidden="true"></i>
+        <h2 class="donation-card-title">Donate Online</h2>
+        <p class="donation-description">Make a secure online donation via SumUp.</p>
+        <a href="https://pay.sumup.com/b2c/QVL4DW3Z" target="_blank" rel="noopener noreferrer" class="donation-action">
+          Donate Online
+        </a>
+      </section>
 
       <!-- Card 2 -->
-      <div class="col-md-4">
-        <div class="card p-4 text-center">
-          <i class="bi bi-qr-code fs-1 mb-3" style="color: var(--color-sage);"></i>
-          <h2 class="h4 fw-bold mb-3">Scan the QR Code</h2>
-          <p class="mb-3">Use your phone to donate quickly and securely.</p>
-          <img src="images/donationqr.jpg" alt="QR code for donating via SumUp" class="img-fluid rounded shadow-sm"
-            style="max-width: 180px;">
-        </div>
-      </div>
+      <section class="donation-card">
+        <i class="bi bi-qr-code donation-icon" aria-hidden="true"></i>
+        <h2 class="donation-card-title">Scan the QR Code</h2>
+        <p class="donation-description">Use your phone to donate quickly and securely.</p>
+        <img src="images/donationqr.jpg" alt="QR code for donating via SumUp" class="donation-qr">
+      </section>
 
       <!-- Card 3 -->
-      <div class="col-md-4">
-        <div class="card p-4">
-          <i class="bi bi-bank fs-1 mb-3" style="color: var(--color-sage);"></i>
-          <h2 class="h4 fw-bold mb-3 text-center">Bank Transfer</h2>
-          <dl class="bank-details">
-            <dt>Bank:</dt>
-            <dd>NatWest</dd>
+      <section class="donation-card">
+        <i class="bi bi-bank donation-icon" aria-hidden="true"></i>
+        <h2 class="donation-card-title">Bank Transfer</h2>
+        <dl class="donation-bank-details">
+          <dt>Bank:</dt>
+          <dd>NatWest</dd>
 
-            <dt>Account name:</dt>
-            <dd>Sue's House: Ilford Cancer and Holistic Health Centre</dd>
+          <dt>Account name:</dt>
+          <dd>Sue's House: Ilford Cancer and Holistic Health Centre</dd>
 
-            <dt>Sort code:</dt>
-            <dd>60-50-09</dd>
+          <dt>Sort code:</dt>
+          <dd>60-50-09</dd>
 
-            <dt>Account number:</dt>
-            <dd>19862806</dd>
-          </dl>
-        </div>
-      </div>
+          <dt>Account number:</dt>
+          <dd>19862806</dd>
+        </dl>
+      </section>
 
     </div>
 
