@@ -3,17 +3,11 @@
 }
 
 .volunteers-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 3.5rem;
-  padding: clamp(2rem, 5vw, 4rem);
-  background: var(--color-ivory);
-  border: 1px solid rgba(85, 122, 104, 0.16);
-  border-top: 5px solid var(--color-terracotta);
-  border-radius: 16px;
-  box-shadow: 0 14px 32px rgba(48, 57, 54, 0.09);
+  margin: 20px auto 50px;
+  padding: 55px 25px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #dff4e3, #e7d9f7);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .volunteers-kicker {
