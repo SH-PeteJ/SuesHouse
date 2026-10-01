@@ -1,114 +1,143 @@
-<!--Validated 1st Sept 2026 - used ChatGPT-->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14th Sept 2026 - Sue's House - trustees.html</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>14th Sept 2026 - Sue's House - trustees.html</title>
+    <!-- Bootstrap + Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Bootstrap + Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    <!-- External JS -->
+    <script defer src="js/navbar.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/trustees.css" />
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <div id="nav-placeholder"></div>
+
+    <main class="container page-content py-4 py-lg-5 flex-grow-1">
+      <section class="trustees-page" aria-labelledby="trustees-heading">
+        <div class="trustees-hero">
+          <p class="eyebrow">Leadership</p>
+          <h1 id="trustees-heading">Our trustees</h1>
+          <p>
+            Our trustees bring experience, compassion and strategic oversight to
+            support the work of Sue's House and help guide the charity in
+            delivering high-quality services and sustainable care.
+          </p>
+        </div>
+
+        <article class="trustee-profile">
+          <div class="profile-card profile-card-portrait">
+            <img
+              src="images/suhaila.jpg"
+              alt="Suhaila Tauheed"
+              class="profile-photo profile-photo-left"
+            />
+            <div class="profile-copy">
+              <div class="profile-header">
+                <h2>Suhaila Tauheed</h2>
+                <span class="profile-role">Trustee</span>
+              </div>
+              <p>
+                Having a strong medical background and vast experience as a
+                counsellor and psychotherapist, Suhaila became a Trustee of
+                Sue's House in March 2015. She helps ensure Sue's House remains
+                true to its original purpose and continues to operate
+                effectively in line with its charitable objectives.
+              </p>
+              <p>
+                Since the death of Gerald Reading in January 2021, Suhaila has
+                been responsible for maintaining compliance with Charity
+                Commission requirements and other regulatory obligations,
+                particularly during the Covid-19 pandemic.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="trustee-profile">
+          <div
+            class="profile-card profile-card-portrait profile-card-alternate"
+          >
+            <img
+              src="images/simon.jpg"
+              alt="Simon Lukes"
+              class="profile-photo profile-photo-right"
+            />
+            <div class="profile-copy">
+              <div class="profile-header">
+                <h2>Simon Lukes</h2>
+                <span class="profile-role">Trustee</span>
+              </div>
+              <p>
+                I was introduced to Sue's House after spending a week at the
+                Bristol Cancer Help Centre in 2002. I am a strong believer in
+                emotional healing and have been receiving support at Sue's House
+                ever since. I have worked and volunteered in the voluntary and
+                community sector for most of my adult life, with experience
+                across practical, administrative and leadership roles.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="trustee-profile">
+          <div class="profile-card profile-card-portrait">
+            <img
+              src="images/aqida.png"
+              alt="Aqida Abbasi"
+              class="profile-photo profile-photo-left"
+            />
+            <div class="profile-copy">
+              <div class="profile-header">
+                <h2>Aqida Abbasi</h2>
+                <span class="profile-role">Trustee</span>
+              </div>
+              <p>
+                I joined Sue's House as a volunteer and have been inspired by
+                the warmth, enthusiasm and commitment of the team. I am a
+                retired NHS nurse practitioner with 46 years of service and
+                bring a strong community-focused perspective shaped by my work
+                with local charities and public service.
+              </p>
+              <p>
+                My background includes long-standing involvement with the Seven
+                Kings Hub project and work as a Justice of the Peace, alongside
+                experience supporting community wellbeing and education
+                initiatives.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
     </script>
-
-
-
-  <!-- External JS -->
-  <script defer src="js/navbar.js"></script>
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="css/master.css">
-  <link rel="stylesheet" href="css/trustees.css">
-</head>
-
-<body>
-
-  <!-- Navigation bar -->
-  <div id="nav-placeholder"></div>
-
-  <main class="container page-content py-4 py-lg-5 flex-grow-1">
-    <section class="trustees-page" aria-labelledby="trustees-heading">
-      <div class="trustees-hero">
-        <p class="eyebrow">Leadership</p>
-        <h1 id="trustees-heading">Our trustees</h1>
-        <p>Our trustees bring experience, compassion and strategic oversight to support the work of Sue's House and help
-          guide the charity in delivering high-quality services and sustainable care.</p>
-      </div>
-
-      <article class="trustee-profile">
-        <div class="profile-card profile-card-portrait">
-          <img src="images/suhaila.jpg" alt="Suhaila Tauheed" class="profile-photo profile-photo-left">
-          <div class="profile-copy">
-            <div class="profile-header">
-              <h2>Suhaila Tauheed</h2>
-              <span class="profile-role">Trustee</span>
-            </div>
-            <p>Having a strong medical background and vast experience as a counsellor and psychotherapist, Suhaila
-              became a
-              Trustee of Sue's House in March 2015. She helps ensure Sue's House remains true to its original purpose
-              and
-              continues to operate effectively in line with its charitable objectives.</p>
-            <p>Since the death of Gerald Reading in January 2021, Suhaila has been responsible for maintaining
-              compliance with
-              Charity Commission requirements and other regulatory obligations, particularly during the Covid-19
-              pandemic.</p>
-          </div>
-        </div>
-      </article>
-
-      <article class="trustee-profile">
-        <div class="profile-card profile-card-portrait profile-card-alternate">
-          <img src="images/simon.jpg" alt="Simon Lukes" class="profile-photo profile-photo-right">
-          <div class="profile-copy">
-            <div class="profile-header">
-              <h2>Simon Lukes</h2>
-              <span class="profile-role">Trustee</span>
-            </div>
-            <p>I was introduced to Sue's House after spending a week at the Bristol Cancer Help Centre in 2002. I am a
-              strong
-              believer in emotional healing and have been receiving support at Sue's House ever since. I have worked and
-              volunteered in the voluntary and community sector for most of my adult life, with experience across
-              practical,
-              administrative and leadership roles.</p>
-          </div>
-        </div>
-      </article>
-
-      <article class="trustee-profile">
-        <div class="profile-card profile-card-portrait">
-          <img src="images/aqida.png" alt="Aqida Abbasi" class="profile-photo profile-photo-left">
-          <div class="profile-copy">
-            <div class="profile-header">
-              <h2>Aqida Abbasi</h2>
-              <span class="profile-role">Trustee</span>
-            </div>
-            <p>I joined Sue's House as a volunteer and have been inspired by the warmth, enthusiasm and commitment of
-              the team.
-              I am a retired NHS nurse practitioner with 46 years of service and bring a strong community-focused
-              perspective
-              shaped by my work with local charities and public service.</p>
-            <p>My background includes long-standing involvement with the Seven Kings Hub project and work as a Justice
-              of the
-              Peace, alongside experience supporting community wellbeing and education initiatives.</p>
-          </div>
-        </div>
-      </article>
-    </section>
-  </main>
-
-  <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
-
-
-</body>
-
+  </body>
 </html>

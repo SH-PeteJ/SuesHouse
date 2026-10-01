@@ -1,114 +1,147 @@
-<!--Validated 1st Sept 2026 - used ChatGPT-->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Therapists | Sue's House</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Therapists | Sue's House</title>
+    <!-- Bootstrap + Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Bootstrap + Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    <!-- External JS -->
+    <script defer src="js/navbar.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/therapists.css" />
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <div id="nav-placeholder"></div>
+    <main class="container page-content therapists-page py-5 flex-grow-1">
+      <section class="therapists-hero">
+        <div>
+          <p class="therapists-kicker">Our professional team</p>
+          <h1>Therapy and counselling with care</h1>
+          <p>
+            Meet the people who help Sue's House provide confidential,
+            compassionate support to patients, carers and families affected by
+            cancer.
+          </p>
+          <a href="contact.html" class="therapists-hero-link"
+            >Ask about support
+            <i class="bi bi-arrow-right" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="therapists-hero-stat">
+          <i class="bi bi-heart-pulse" aria-hidden="true"></i>
+          <strong>Safe and confidential</strong>
+          <span>Support shaped around each person's needs.</span>
+        </div>
+      </section>
+
+      <section class="therapist-profile-card" aria-labelledby="suhaila-heading">
+        <div class="therapist-profile-image">
+          <img src="images/suhaila.jpg" alt="Suhaila Tauheed" />
+        </div>
+        <div class="therapist-profile-content">
+          <p class="therapists-kicker">Counsellor</p>
+          <h2 id="suhaila-heading">Suhaila Tauheed</h2>
+          <p class="therapist-credentials">MBACP, FHCP</p>
+          <p>
+            Suhaila qualified in Counselling and Humanistic Psychology in 1999,
+            covering cognitive, person-centred, humanistic and Gestalt
+            approaches. Her experience includes one-to-one and couples
+            counselling, bereavement support, anxiety, depression, addiction and
+            the effects of abuse.
+          </p>
+          <p>
+            She joined Sue's House in 2010 after training with Macmillan Cancer
+            Support and developing a deeper understanding of how cancer affects
+            patients and families. She provides empathetic, non-judgemental,
+            safe and confidential counselling to patients and carers.
+          </p>
+          <blockquote>
+            “I help patients and carers process and express their issues and
+            cope better with life's troubles.”
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="therapist-services" aria-labelledby="services-heading">
+        <div class="therapists-section-heading">
+          <p class="therapists-kicker">How we can help</p>
+          <h2 id="services-heading">Support that respects the whole person</h2>
+          <p>
+            Our services are designed to complement medical care and provide
+            space for emotional wellbeing, reflection and practical support.
+          </p>
+        </div>
+        <div class="therapist-service-grid">
+          <article class="therapist-service-item">
+            <i class="bi bi-chat-heart" aria-hidden="true"></i>
+            <h3>Counselling</h3>
+            <p>
+              Confidential space to talk through difficult experiences, feelings
+              and change.
+            </p>
+          </article>
+          <article class="therapist-service-item">
+            <i class="bi bi-person-hearts" aria-hidden="true"></i>
+            <h3>Support for carers</h3>
+            <p>
+              Understanding support for those caring for a loved one or managing
+              family concerns.
+            </p>
+          </article>
+          <article class="therapist-service-item">
+            <i class="bi bi-compass" aria-hidden="true"></i>
+            <h3>Complementary care</h3>
+            <p>
+              Explore additional wellbeing services alongside the wider Sue's
+              House team.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="therapists-cta">
+        <div>
+          <p class="therapists-kicker">Take the next step</p>
+          <h2>Would you like to find out more?</h2>
+          <p>
+            Contact Sue's House to discuss the support available and how to get
+            started.
+          </p>
+        </div>
+        <a href="contact.html" class="therapists-cta-button"
+          >Contact Sue's House
+          <i class="bi bi-arrow-right" aria-hidden="true"></i
+        ></a>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
     </script>
-
-  <!-- External JS -->
-  <script defer src="js/navbar.js"></script>
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="css/master.css">
-  <link rel="stylesheet" href="css/therapists.css">
-</head>
-
-<body>
-
-  <!-- Navigation bar -->
-  <div id="nav-placeholder"></div>
-  <main class="container page-content therapists-page py-5 flex-grow-1">
-    <section class="therapists-hero">
-      <div>
-        <p class="therapists-kicker">Our professional team</p>
-        <h1>Therapy and counselling with care</h1>
-        <p>Meet the people who help Sue's House provide confidential, compassionate support to patients, carers and
-          families affected by cancer.</p>
-        <a href="contact.html" class="therapists-hero-link">Ask about support <i class="bi bi-arrow-right"
-            aria-hidden="true"></i></a>
-      </div>
-      <div class="therapists-hero-stat">
-        <i class="bi bi-heart-pulse" aria-hidden="true"></i>
-        <strong>Safe and confidential</strong>
-        <span>Support shaped around each person's needs.</span>
-      </div>
-    </section>
-
-    <section class="therapist-profile-card" aria-labelledby="suhaila-heading">
-      <div class="therapist-profile-image">
-        <img src="images/suhaila.jpg" alt="Suhaila Tauheed">
-      </div>
-      <div class="therapist-profile-content">
-        <p class="therapists-kicker">Counsellor</p>
-        <h2 id="suhaila-heading">Suhaila Tauheed</h2>
-        <p class="therapist-credentials">MBACP, FHCP</p>
-        <p>Suhaila qualified in Counselling and Humanistic Psychology in 1999, covering cognitive, person-centred,
-          humanistic and Gestalt approaches. Her experience includes one-to-one and couples counselling, bereavement
-          support, anxiety, depression, addiction and the effects of abuse.</p>
-        <p>She joined Sue's House in 2010 after training with Macmillan Cancer Support and developing a deeper
-          understanding of how cancer affects patients and families. She provides empathetic, non-judgemental, safe and
-          confidential counselling to patients and carers.</p>
-        <blockquote>“I help patients and carers process and express their issues and cope better with life's troubles.”
-        </blockquote>
-      </div>
-    </section>
-
-    <section class="therapist-services" aria-labelledby="services-heading">
-      <div class="therapists-section-heading">
-        <p class="therapists-kicker">How we can help</p>
-        <h2 id="services-heading">Support that respects the whole person</h2>
-        <p>Our services are designed to complement medical care and provide space for emotional wellbeing, reflection
-          and practical support.</p>
-      </div>
-      <div class="therapist-service-grid">
-        <article class="therapist-service-item">
-          <i class="bi bi-chat-heart" aria-hidden="true"></i>
-          <h3>Counselling</h3>
-          <p>Confidential space to talk through difficult experiences, feelings and change.</p>
-        </article>
-        <article class="therapist-service-item">
-          <i class="bi bi-person-hearts" aria-hidden="true"></i>
-          <h3>Support for carers</h3>
-          <p>Understanding support for those caring for a loved one or managing family concerns.</p>
-        </article>
-        <article class="therapist-service-item">
-          <i class="bi bi-compass" aria-hidden="true"></i>
-          <h3>Complementary care</h3>
-          <p>Explore additional wellbeing services alongside the wider Sue's House team.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="therapists-cta">
-      <div>
-        <p class="therapists-kicker">Take the next step</p>
-        <h2>Would you like to find out more?</h2>
-        <p>Contact Sue's House to discuss the support available and how to get started.</p>
-      </div>
-      <a href="contact.html" class="therapists-cta-button">Contact Sue's House <i class="bi bi-arrow-right"
-          aria-hidden="true"></i></a>
-    </section>
-  </main>
-
-  <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
-
-
-</body>
-
+  </body>
 </html>

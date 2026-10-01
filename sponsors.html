@@ -1,88 +1,107 @@
-<!--Validated 1st Sept 2026 - used ChatGPT-->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14th Sept 2026 - Sue's House - sponsors.html</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>14th Sept 2026 - Sue's House - sponsors.html</title>
+    <!-- Bootstrap + Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Bootstrap + Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    <!-- External JS -->
+    <script defer src="js/navbar.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/sponsors.css" />
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <div id="nav-placeholder"></div>
+
+    <main class="container page-content py-4 py-lg-5 flex-grow-1">
+      <section class="sponsors-page" aria-labelledby="sponsors-heading">
+        <div class="sponsors-hero">
+          <div class="sponsors-copy">
+            <p class="eyebrow">Supporters</p>
+            <h1 id="sponsors-heading">Thank you to our supporters</h1>
+            <p>
+              We are grateful to the organisations and individuals who invest in
+              our mission and help make Sue's House a place of comfort, care and
+              practical support for those affected by cancer.
+            </p>
+          </div>
+          <div class="sponsor-highlight">
+            <span class="highlight-label">Recent donation</span>
+            <strong>£250</strong>
+            <small>Leo 80 and team</small>
+          </div>
+        </div>
+
+        <div class="sponsor-story">
+          <div class="story-image story-image-right">
+            <img
+              src="images/leo80a.jpg"
+              alt="Leo 80 cheque presentation"
+              class="img-fluid"
+            />
+          </div>
+
+          <div class="story-text">
+            <p>
+              80s Leo visited Sue's House to make a generous contribution of
+              £200 from their organisation, alongside a further £50 donated
+              personally. This thoughtful support reflects the value of
+              community-led giving and recognises the difference made through
+              our work.
+            </p>
+            <p>
+              We are sincerely grateful for their generosity and for taking the
+              time to acknowledge the care, dedication and hard work happening
+              at Sue's House. We hope to build on this relationship and continue
+              working together in the future.
+            </p>
+          </div>
+        </div>
+
+        <div class="sponsor-signoff">
+          <div class="signature-block">
+            <h2>With thanks</h2>
+            <p>Suhaila</p>
+          </div>
+
+          <div class="story-image story-image-left">
+            <img
+              src="images/leo80.jpg"
+              alt="Leo 80 presentation photograph"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
     </script>
-
-  <!-- External JS -->
-  <script defer src="js/navbar.js"></script>
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="css/master.css">
-  <link rel="stylesheet" href="css/sponsors.css">
-</head>
-
-<body>
-
-  <!-- Navigation bar -->
-  <div id="nav-placeholder"></div>
-
-  <main class="container page-content py-4 py-lg-5 flex-grow-1">
-    <section class="sponsors-page" aria-labelledby="sponsors-heading">
-      <div class="sponsors-hero">
-        <div class="sponsors-copy">
-          <p class="eyebrow">Supporters</p>
-          <h1 id="sponsors-heading">Thank you to our supporters</h1>
-          <p>We are grateful to the organisations and individuals who invest in our mission and help make Sue's House a
-            place of comfort, care and practical support for those affected by cancer.</p>
-        </div>
-        <div class="sponsor-highlight">
-          <span class="highlight-label">Recent donation</span>
-          <strong>£250</strong>
-          <small>Leo 80 and team</small>
-        </div>
-      </div>
-
-      <div class="sponsor-story">
-        <div class="story-image story-image-right">
-          <img src="images/leo80a.jpg" alt="Leo 80 cheque presentation" class="img-fluid">
-        </div>
-
-        <div class="story-text">
-          <p>80s Leo visited Sue's House to make a generous contribution of £200 from their organisation, alongside a
-            further £50 donated personally. This thoughtful support reflects the value of community-led giving and
-            recognises
-            the difference made through our work.</p>
-          <p>We are sincerely grateful for their generosity and for taking the time to acknowledge the care, dedication
-            and
-            hard work happening at Sue's House. We hope to build on this relationship and continue working together in
-            the
-            future.</p>
-        </div>
-      </div>
-
-      <div class="sponsor-signoff">
-        <div class="signature-block">
-          <h2>With thanks</h2>
-          <p>Suhaila</p>
-        </div>
-
-        <div class="story-image story-image-left">
-          <img src="images/leo80.jpg" alt="Leo 80 presentation photograph" class="img-fluid">
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
-
-</body>
-
+  </body>
 </html>
