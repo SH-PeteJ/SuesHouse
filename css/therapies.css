@@ -239,3 +239,25 @@
     padding: 1.5rem;
   }
 }
+.video-card {
+    max-width: 700px;
+    width: 100%;
+}
+
+.video-card .card {
+    border-radius: 15px;
+    border: none;
+}
+
+.video-card .card-body {
+    padding: 25px;
+}
+
+.video-card .card-title {
+    color: #557a68;
+    margin-bottom: 10px;
+}
+
+.video-card .card-text {
+    margin-bottom: 20px;
+}
