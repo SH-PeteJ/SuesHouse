@@ -266,6 +266,45 @@
     border: 0;
     border-radius: 10px;
 }
+.short-video-card {
+    max-width: 315px;
+    margin: 0 auto;
+}
+
+.video-thumbnail {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-thumbnail img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+
+    border-radius: 50%;
+    font-size: 28px;
+    padding-left: 4px;
+}
 @media (max-width: 767px) {
   .group-hero,
   .group-intro,
