@@ -268,8 +268,10 @@
     border-radius: 10px;
 }
 .short-video-card {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
 }
 
 .video-thumbnail {
