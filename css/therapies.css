@@ -261,3 +261,9 @@
 .video-card .card-text {
     margin-bottom: 20px;
 }
+.short-video-card {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+}
